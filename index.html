@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Mrc.Dev</a>
+        <ul class="nav-links">
+          <li><a href="sobre.html" id="link-sobre">Sobre mim</a></li>
+          <li><a href="#projetos" id="link-projetos">Projetos</a></li>
+          <li><a href="#contato" id="link-contato">Contato</a></li>
+        </ul>
+        <a href="#" class="idioma" onclick="mudarIdioma()">
+          <img src="imagem/language.png" alt="Idioma" />
+        </a>
+        <a href="#" class="darck" onclick="mudarTema()">
+          <img src="imagem/dark.png" alt="Idioma" />
+        </a>
+      </nav>
+    </header>
+
+    <section id="sobre">
+      <h1 id="titulo-sobre">Minha jornada no mundo do desenvolvimento! 💻✨</h1>
+      <img src="imagem/perfil.jpg" alt="Lucas Marcio" class="foto-perfil" />
+      <p id="texto-sobre">
+        Olá! Sou Lucas Marcio (ou apenas Mrc.Dev) e eu Sou um profissional em
+        formação na área de Engenharia de Software, apaixonado por tecnologia e
+        inovação. Minha jornada na tecnologia começou com o desenvolvimento de
+        aplicativos móveis, mas logo expandi meu interesse para arquitetura de
+        software, engenharia de sistemas e computação em nuvem. Busco sempre
+        criar soluções eficientes, escaláveis e de alto desempenho, utilizando
+        as melhores práticas e tecnologias disponíveis. Atualmente, estou
+        aprimorando minhas habilidades em design de sistemas, DevOps e
+        desenvolvimento backend, aprofundando meus conhecimentos para construir
+        aplicações robustas e confiáveis. Tenho experiência com Kotlin, Java e
+        tecnologias backend, além de trabalhar com integração de APIs,
+        otimização de desempenho e engenharia de software. Acredito que a
+        tecnologia pode transformar negócios e impactar a vida das pessoas de
+        forma positiva. Meu objetivo é continuar aprendendo e contribuindo para
+        projetos que façam a diferença.
+      </p>
+    </section>
+
+    <section id="projetos">
+      <h2 id="titulo-projetos">Meus Projetos</h2>
+      <p id="texto-projetos">
+        Confira alguns dos projetos que desenvolvi.<br />
+      </p>
+      <a
+        href="https://github.com/Lucasmrc81/ZapCar"
+        target="_blank"
+        class="meu-projeto"
+        id="botao-projeto"
+      >
+        🔗 Ver Projeto ZapCar
+      </a>
+    </section>
+
+    <section id="contato">
+      <h2 id="titulo-contato">Contato</h2>
+      <p id="texto-contato">
+        Entre em contato comigo através das redes sociais ou e-mail.
+      </p>
+      <div align="center">
+        <a href="https://www.linkedin.com/in/lucas-mrc-dev/" target="_blank">
+          <img
+            src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg"
+            width="52"
+            height="40"
+            alt="linkedin logo"
+          />
+        </a>
+        <a href="https://discord.com/channels/@lucasmrc81/" target="_blank">
+          <img
+            src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg"
+            width="52"
+            height="40"
+            alt="discord logo"
+          />
+        </a>
+        <a href="http://wa.me/5511940746586" target="_blank">
+          <img
+            src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/whatsapp/default.svg"
+            width="52"
+            height="40"
+            alt="whatsapp logo"
+          />
+        </a>
+        <a href="mailto:lucasmrc81@gmail.com" target="_blank">
+          <img
+            src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg"
+            width="52"
+            height="40"
+            alt="gmail logo"
+          />
+        </a>
+        <a href="https://www.instagram.com/lucasmrc81/" target="_blank">
+          <img
+            src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg"
+            width="52"
+            height="40"
+            alt="instagram logo"
+          />
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const savedLanguage =
+          localStorage.getItem("selectedLanguage") || "pt-br"; // Padrão é PT-BR
+        document.documentElement.lang = savedLanguage;
+        atualizarTextos(savedLanguage);
+
+        function atualizarTextos(language) {
+          const tituloSobre = document.getElementById("titulo-sobre");
+          const textoSobre = document.getElementById("texto-sobre");
+          const tituloProjetos = document.getElementById("titulo-projetos");
+          const textoProjetos = document.getElementById("texto-projetos");
+          const tituloContato = document.getElementById("titulo-contato");
+          const textoContato = document.getElementById("texto-contato");
+          const linkSobre = document.getElementById("link-sobre");
+          const linkProjetos = document.getElementById("link-projetos");
+          const linkContato = document.getElementById("link-contato");
+          const botaoProjeto = document.getElementById("botao-projeto");
+          if (language === "en") {
+            // Definindo os textos em inglês
+            tituloSobre.innerText =
+              "My journey in the world of development! 💻✨";
+            textoSobre.innerText =
+              "Hello! I'm Lucas Marcio (or just Mrc.Dev), and I'm a professional in training in the field of Software Engineering, passionate about technology and innovation. My journey in technology began with mobile app development, but I quickly expanded my interest to software architecture, systems engineering, and cloud computing. " +
+              "I always strive to create efficient, scalable, and high-performance solutions, using the best practices and technologies available. Currently, I am improving my skills in system design, DevOps, and backend development, deepening my knowledge to build robust and reliable applications. " +
+              "I have experience with Kotlin, Java, and backend technologies, as well as working with API integration, performance optimization, and software engineering. I believe that technology can transform businesses and positively impact people's lives. My goal is to keep learning and contributing to projects that make a difference.";
+
+            tituloProjetos.innerText = "My Projects";
+            textoProjetos.innerText =
+              "Check out some of the projects I have developed.";
+            tituloContato.innerText = "Contact";
+            textoContato.innerText =
+              "Contact me through social media or email.";
+            botaoProjeto.innerText = "🔗 View ZapCar Project";
+            linkSobre.innerText = "About me";
+            linkProjetos.innerText = "Projects";
+            linkContato.innerText = "Contact";
+          } else {
+            // Definindo os textos em português
+            tituloSobre.innerText =
+              "Minha jornada no mundo do desenvolvimento! 💻✨";
+            textoSobre.innerText =
+              "Olá! Sou Lucas Marcio (ou apenas Mrc.Dev) e sou um profissional em formação na área de Engenharia de Software, apaixonado por tecnologia e inovação. Minha jornada na tecnologia começou com o desenvolvimento de aplicativos móveis, mas logo expandi meu interesse para arquitetura de software, engenharia de sistemas e computação em nuvem. " +
+              "Busco sempre criar soluções eficientes, escaláveis e de alto desempenho, utilizando as melhores práticas e tecnologias disponíveis. Atualmente, estou aprimorando minhas habilidades em design de sistemas, DevOps e desenvolvimento backend, aprofundando meus conhecimentos para construir aplicações robustas e confiáveis. " +
+              "Tenho experiência com Kotlin, Java e tecnologias backend, além de trabalhar com integração de APIs, otimização de desempenho e engenharia de software. Acredito que a tecnologia pode transformar negócios e impactar a vida das pessoas de forma positiva. Meu objetivo é continuar aprendendo e contribuindo para projetos que façam a diferença.";
+
+            tituloProjetos.innerText = "Meus Projetos";
+            textoProjetos.innerText =
+              "Confira alguns dos projetos que desenvolvi.";
+            tituloContato.innerText = "Contato";
+            textoContato.innerText =
+              "Entre em contato comigo através das redes sociais ou e-mail.";
+            botaoProjeto.innerText = "🔗 Ver Projeto ZapCar";
+            linkSobre.innerText = "Sobre mim";
+            linkProjetos.innerText = "Projetos";
+            linkContato.innerText = "Contato";
+          }
+        }
+
+        window.mudarIdioma = function () {
+          const isPortuguese = document.documentElement.lang === "pt-br";
+          const newLanguage = isPortuguese ? "en" : "pt-br";
+          document.documentElement.lang = newLanguage;
+
+          localStorage.setItem("selectedLanguage", newLanguage); // Salva no localStorage
+          document.documentElement.lang = newLanguage;
+          atualizarTextos(newLanguage);
+        };
+      });
+    </script>
+    <script>
+      /// Função para alternar o tema e salvar a preferência
+      function mudarTema() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+
+        // Alterar a fonte no modo escuro
+        body.style.fontFamily = body.classList.contains("dark-mode")
+          ? "Courier New, monospace"
+          : "Arial, sans-serif";
+
+        // Atualizar imagem do botão
+        const darkModeButton = document.querySelector(".darck img");
+        if (darkModeButton) {
+          darkModeButton.src = body.classList.contains("dark-mode")
+            ? "imagem/light.png"
+            : "imagem/dark.png";
+        }
+
+        // Atualizar o botão de projeto
+        const botaoProjeto = document.querySelector(".botao-projeto");
+        if (botaoProjeto) {
+          botaoProjeto.innerText = body.classList.contains("dark-mode")
+            ? "🔮 Ver Projeto ZapCar"
+            : "🔗 Ver Projeto ZapCar";
+        }
+
+        // Salvar a preferência do tema no localStorage
+        localStorage.setItem(
+          "modoEscuro",
+          body.classList.contains("dark-mode")
+        );
+      }
+
+      // Aplicar o tema salvo ao carregar a página
+      document.addEventListener("DOMContentLoaded", () => {
+        const body = document.body;
+        const darkModeButton = document.querySelector(".darck img");
+        const botaoProjeto = document.querySelector(".botao-projeto");
+
+        // Verificar se o modo escuro foi ativado no localStorage
+        const modoEscuroSalvo = localStorage.getItem("modoEscuro");
+
+        if (modoEscuroSalvo === "true") {
+          body.classList.add("dark-mode");
+          body.style.fontFamily = "Courier New, monospace";
+
+          if (darkModeButton) {
+            darkModeButton.src = "imagem/light.png"; // Altere para o caminho da imagem desejada
+          }
+
+          if (botaoProjeto) {
+            botaoProjeto.innerText = "🔮 Ver Projeto ZapCar"; // Texto para o modo escuro
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
