@@ -218,10 +218,14 @@ section {
 #texto-projetos {
   margin-bottom: 10px;
 }
-.meu-projeto,
+#projetos {
+  text-align: center;
+}
 .botao-projeto {
   margin-top: 20px !important;
   padding: 10px;
+  display: inline-block;
+  margin: 10px;
   background-color: #084a8a;
   color: white;
   text-decoration: none;
