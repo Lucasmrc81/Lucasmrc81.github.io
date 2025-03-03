@@ -120,17 +120,49 @@
     <script src="scripts/idioma.js"></script>
     <script src="scripts/tema.js"></script>
     <script>
-      // Função para obter e incrementar a contagem de visitas
-      async function updateVisitCount() {
-        const response = await fetch("/api/increment-visit", {
-          method: "POST",
-        });
-        const data = await response.json();
-        console.log(`Visitas: ${data.count}`);
-      }
+            // Função para obter e incrementar a contagem de visitas
+            async function updateVisitCount() {
+              const response = await fetch("/api/increment-visit", {
+                method: "POST",
+              });
+              const data = await response.json();
+              console.log(`Visitas: ${data.count}`);
+            }
 
-      // Chamar a função ao carregar a página
-      document.addEventListener("DOMContentLoaded", updateVisitCount);
+            // Chamar a função ao carregar a página
+            document.addEventListener("DOMContentLoaded", updateVisitCount);
+      '''
+            function mudarTema() {
+              const body = document.body;
+              body.classList.toggle("dark-mode");
+
+              body.style.fontFamily = body.classList.contains("dark-mode")
+                ? "Courier New, monospace"
+                : "Arial, sans-serif";
+
+              const darkModeButton = document.querySelector(".darck img");
+              darkModeButton.src = body.classList.contains("dark-mode")
+                ? "imagem/light.png"
+                : "imagem/dark.png";
+
+              const botoesProjeto = document.querySelectorAll(".botao-projeto");
+              botoesProjeto.forEach((botaoProjeto) => {
+                botaoProjeto.innerText = body.classList.contains("dark-mode")
+                  ? `🔮 ${botaoProjeto.innerText.replace("🔗", "").trim()}`
+                  : `🔗 ${botaoProjeto.innerText.replace("🔮", "").trim()}`;
+              });
+
+              localStorage.setItem(
+                "modoEscuro",
+                body.classList.contains("dark-mode")
+              );
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+              if (localStorage.getItem("modoEscuro") === "true") {
+                mudarTema();
+              }
+            });
     </script>
   </body>
 </html>

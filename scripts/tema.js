@@ -11,12 +11,12 @@ function mudarTema() {
     ? "imagem/light.png"
     : "imagem/dark.png";
 
-  const botaoProjeto = document.querySelector(".botao-projeto");
-  if (botaoProjeto) {
+  const botoesProjeto = document.querySelectorAll(".botao-projeto");
+  botoesProjeto.forEach((botaoProjeto) => {
     botaoProjeto.innerText = body.classList.contains("dark-mode")
-      ? "🔮 Ver Projeto ZapCar"
-      : "🔗 Ver Projeto ZapCar";
-  }
+      ? `🔮 ${botaoProjeto.innerText.replace("🔗", "").trim()}`
+      : `🔗 ${botaoProjeto.innerText.replace("🔮", "").trim()}`;
+  });
 
   localStorage.setItem("modoEscuro", body.classList.contains("dark-mode"));
 }
