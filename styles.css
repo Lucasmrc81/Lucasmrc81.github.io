@@ -449,3 +449,14 @@ html {
   color: #d8b4fe;
   animation: neon-glow 1.5s infinite alternate;
 }
+
+.titulo-principal {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.titulo-azul {
+  color: #4a90e2;
+}
