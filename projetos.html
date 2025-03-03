@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos - Lucas Marcio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Mrc.Dev</a>
+        <ul class="nav-links">
+          <li><a href="sobre.html" id="link-sobre">Sobre mim</a></li>
+          <li><a href="projetos.html" id="link-projetos">Projetos</a></li>
+          <li><a href="index.html#contato" id="link-contato">Contato</a></li>
+        </ul>
+        <a href="#" class="idioma" onclick="mudarIdioma(event)">
+          <img src="imagem/language.png" alt="Idioma" />
+        </a>
+        <a href="#" class="darck" onclick="mudarTema()">
+          <img src="imagem/dark.png" alt="Tema escuro" />
+        </a>
+      </nav>
+    </header>
+
+    <section id="projetos">
+      <h1 id="titulo-projetos">Meus Projetos</h1>
+      <div class="projeto">
+        <h2>ZapCar</h2>
+        <p>
+          O ZapCar nasceu de um desafio proposto pela DIO.me, onde tive a
+          oportunidade de explorar conceitos fundamentais do desenvolvimento
+          mobile. A ideia era criar uma plataforma que facilitasse a locação de
+          veículos elétricos, proporcionando uma experiência intuitiva e moderna
+          para os usuários. Durante o desenvolvimento, me aprofundei no uso de
+          Kotlin, aprimorando habilidades como consumo de APIs, manipulação de
+          listas e gerenciamento de estado. Esse projeto foi um divisor de águas
+          na minha jornada, pois consolidou meu entendimento sobre o ecossistema
+          Android e me preparou para desafios ainda maiores.
+        </p>
+        <button
+          class="botao-projeto"
+          onclick="window.open('https://github.com/Lucasmrc81/ZapCar', '_blank')"
+        >
+          🔗 Ver Repositório
+        </button>
+      </div>
+
+      <div class="projeto">
+        <h2>Mrc81 Bank</h2>
+        <p>
+          O Mrc81 Bank surgiu da minha curiosidade em entender como funcionam os
+          sistemas bancários e de pagamentos online. Inspirado no funcionamento
+          de grandes instituições financeiras, decidi criar um simulador
+          bancário que permitisse aos usuários realizar operações como
+          depósitos, saques e transferências via Pix. Desenvolver esse sistema
+          me fez mergulhar em conceitos como autenticação segura, estruturação
+          de banco de dados e boas práticas de código. Cada funcionalidade
+          implementada foi um aprendizado valioso, tornando este projeto um dos
+          pilares do meu portfólio.
+        </p>
+        <button
+          class="botao-projeto"
+          onclick="window.open('https://github.com/Lucasmrc81/Banco-do-Lucas', '_blank')"
+        >
+          🔗 Ver Repositório
+        </button>
+      </div>
+
+      <div class="projeto">
+        <h2>API My-Api</h2>
+        <p>
+          Sempre tive interesse em entender melhor como os sistemas se
+          comunicam, e foi assim que nasceu a ideia de criar minha própria API
+          bancária. Desenvolvi a My-Api para gerenciar contas bancárias,
+          oferecendo funcionalidades como registro de usuários, operações de
+          crédito e débito, além de autenticação JWT. Utilizando Node.js e
+          Express, pude explorar o desenvolvimento de endpoints RESTful e a
+          importância da segurança no backend. Esse projeto me permitiu
+          aprofundar no mundo das APIs, solidificando conceitos que hoje aplico
+          em projetos mais complexos.
+        </p>
+        <button
+          class="botao-projeto"
+          onclick="window.open('https://github.com/Lucasmrc81/Api', '_blank')"
+        >
+          🔗 Ver Repositório
+        </button>
+      </div>
+
+      <div class="projeto">
+        <h2>Infinity Bank</h2>
+        <p>
+          O Infinity Bank foi mais do que um projeto, foi um verdadeiro desafio
+          pessoal. Minha intenção era criar um banco digital funcional,
+          proporcionando uma experiência de usuário fluida e segura. Utilizando
+          HTML, CSS e JavaScript, desenvolvi uma interface interativa e moderna,
+          com funcionalidades como consulta de saldo, pagamentos, transferências
+          e extrato bancário. Durante o desenvolvimento, aprendi sobre
+          estruturação de interfaces responsivas e implementação de interações
+          dinâmicas. Esse projeto foi um marco na minha evolução como
+          desenvolvedor, demonstrando minha capacidade de criar aplicações
+          completas e bem estruturadas.
+        </p>
+        <button
+          class="botao-projeto"
+          onclick="window.open('https://github.com/Lucasmrc81/infinity-bank', '_blank')"
+        >
+          🔗 Ver Repositório
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+      <p id="visit-count"></p>
+    </footer>
+
+    <script src="scripts/idioma.js"></script>
+    <script src="scripts/tema.js"></script>
+    <script>
+      // Função para obter e incrementar a contagem de visitas
+      async function updateVisitCount() {
+        const response = await fetch("/api/increment-visit", {
+          method: "POST",
+        });
+        const data = await response.json();
+        console.log(`Visitas: ${data.count}`);
+      }
+
+      // Chamar a função ao carregar a página
+      document.addEventListener("DOMContentLoaded", updateVisitCount);
+    </script>
+  </body>
+</html>

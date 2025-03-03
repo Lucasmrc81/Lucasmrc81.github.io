@@ -12,7 +12,7 @@
         <a href="index.html" class="logo">Mrc.Dev</a>
         <ul class="nav-links">
           <li><a href="sobre.html" id="link-sobre">Sobre mim</a></li>
-          <li><a href="#projetos" id="link-projetos">Projetos</a></li>
+          <li><a href="projetos.html" id="link-projetos">Projetos</a></li>
           <li><a href="#contato" id="link-contato">Contato</a></li>
         </ul>
         <a href="#" class="idioma" onclick="mudarIdioma()">
@@ -24,24 +24,24 @@
       </nav>
     </header>
 
-    <section id="sobre">
-      <h1 id="titulo-sobre">Minha jornada no mundo do desenvolvimento! 💻✨</h1>
+    <section id="introducao">
+      <h1 id="titulo-introducao">Sobre mim 🚀</h1>
       <img src="imagem/perfil.jpg" alt="Lucas Marcio" class="foto-perfil" />
-      <p id="texto-sobre">
-        Olá! Sou Lucas Marcio (ou apenas Mrc.Dev) e eu Sou um profissional em
-        formação na área de Engenharia de Software, apaixonado por tecnologia e
-        inovação. Minha jornada na tecnologia começou com o desenvolvimento de
-        aplicativos móveis, mas logo expandi meu interesse para arquitetura de
-        software, engenharia de sistemas e computação em nuvem. Busco sempre
-        criar soluções eficientes, escaláveis e de alto desempenho, utilizando
-        as melhores práticas e tecnologias disponíveis. Atualmente, estou
-        aprimorando minhas habilidades em design de sistemas, DevOps e
+      <p id="texto-introducao">
+        Olá! Sou Lucas Marcio (ou apenas Mrc.Dev), profissional em formação na
+        área de Engenharia de Software, apaixonado por tecnologia e inovação.
+        Minha jornada na tecnologia começou com desenvolvimento de aplicativos
+        móveis, mas rapidamente expandi meu interesse para arquitetura de
+        software, engenharia de sistemas e computação em nuvem. Sempre busco
+        criar soluções eficientes, escaláveis ​​e de alta performance,
+        utilizando as melhores práticas e tecnologias disponíveis. Atualmente,
+        estou aprimorando minhas habilidades em design de sistemas, DevOps e
         desenvolvimento backend, aprofundando meus conhecimentos para construir
         aplicações robustas e confiáveis. Tenho experiência com Kotlin, Java e
         tecnologias backend, além de trabalhar com integração de APIs,
-        otimização de desempenho e engenharia de software. Acredito que a
-        tecnologia pode transformar negócios e impactar a vida das pessoas de
-        forma positiva. Meu objetivo é continuar aprendendo e contribuindo para
+        otimização de performance e engenharia de software. Acredito que a
+        tecnologia pode transformar negócios e impactar positivamente a vida das
+        pessoas. Meu objetivo é continuar aprendendo e contribuindo para
         projetos que façam a diferença.
       </p>
     </section>
@@ -65,11 +65,18 @@
       </button>
       <button
         class="botao-projeto"
-        onclick="window.open('https://github.com/Lucasmrc81/Api', '_blank')"
+        onclick="window.open('https://github.com/Lucasmrc81/Api')"
       >
-        🔗 Ver Projeto Mrc81 Bank
+        🔗 Ver Projeto de API
+      </button>
+      <button
+        class="botao-projeto"
+        onclick="window.open('https://github.com/Lucasmrc81/infinity-bank')"
+      >
+        🔗 Ver Projeto infinity-bank
       </button>
     </section>
+
     <section id="contato">
       <h2 id="titulo-contato">Contato</h2>
       <p id="texto-contato">
@@ -119,136 +126,116 @@
       </div>
     </section>
 
+    <div id="curriculo-section">
+      <h3 id="titulo-curriculo">Currículo</h3>
+      <p id="texto-curriculo">
+        Se você deseja saber mais sobre minha experiência e habilidades, pode
+        baixar meu currículo completo clicando no botão abaixo.
+      </p>
+      <a href="Currículo.pdf" class="botao-curriculo" target="_blank"
+        >📄 Baixar Currículo</a
+      >
+    </div>
+
     <footer>
       <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+      <p id="visit-count"></p>
     </footer>
 
+    <script src="scripts/idioma.js"></script>
+    <script src="scripts/tema.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const savedLanguage =
-          localStorage.getItem("selectedLanguage") || "pt-br"; // Padrão é PT-BR
-        document.documentElement.lang = savedLanguage;
-        atualizarTextos(savedLanguage);
+      function atualizarTextosIntroducao(language) {
+        const tituloIntroducao = document.getElementById("titulo-introducao");
+        const textoIntroducao = document.getElementById("texto-introducao");
+        const botoesProjeto = document.querySelectorAll(".botao-projeto");
+        const linkSobre = document.getElementById("link-sobre");
+        const linkProjetos = document.getElementById("link-projetos");
+        const linkContato = document.getElementById("link-contato");
+        const tituloProjetos = document.getElementById("titulo-projetos");
+        const textoProjetos = document.getElementById("texto-projetos");
+        const tituloContato = document.getElementById("titulo-contato");
+        const textoContato = document.getElementById("texto-contato");
+        const botaoCurriculo = document.querySelector(".botao-curriculo");
+        const textoCurriculo = document.getElementById("texto-curriculo");
+        const tituloCurriculo = document.getElementById("titulo-curriculo");
 
-        function atualizarTextos(language) {
-          const tituloSobre = document.getElementById("titulo-sobre");
-          const textoSobre = document.getElementById("texto-sobre");
-          const tituloProjetos = document.getElementById("titulo-projetos");
-          const textoProjetos = document.getElementById("texto-projetos");
-          const tituloContato = document.getElementById("titulo-contato");
-          const textoContato = document.getElementById("texto-contato");
-          const linkSobre = document.getElementById("link-sobre");
-          const linkProjetos = document.getElementById("link-projetos");
-          const linkContato = document.getElementById("link-contato");
-          const botaoProjeto = document.getElementById("botao-projeto");
-          if (language === "en") {
-            // Definindo os textos em inglês
-            tituloSobre.innerText =
-              "My journey in the world of development! 💻✨";
-            textoSobre.innerText =
-              "Hello! I'm Lucas Marcio (or just Mrc.Dev), and I'm a professional in training in the field of Software Engineering, passionate about technology and innovation. My journey in technology began with mobile app development, but I quickly expanded my interest to software architecture, systems engineering, and cloud computing. " +
-              "I always strive to create efficient, scalable, and high-performance solutions, using the best practices and technologies available. Currently, I am improving my skills in system design, DevOps, and backend development, deepening my knowledge to build robust and reliable applications. " +
-              "I have experience with Kotlin, Java, and backend technologies, as well as working with API integration, performance optimization, and software engineering. I believe that technology can transform businesses and positively impact people's lives. My goal is to keep learning and contributing to projects that make a difference.";
-
-            tituloProjetos.innerText = "My Projects";
-            textoProjetos.innerText =
-              "Check out some of the projects I have developed.";
-            tituloContato.innerText = "Contact";
-            textoContato.innerText =
-              "Contact me through social media or email.";
-            botaoProjeto.innerText = "🔗 View ZapCar Project";
-            linkSobre.innerText = "About me";
-            linkProjetos.innerText = "Projects";
-            linkContato.innerText = "Contact";
-          } else {
-            // Definindo os textos em português
-            tituloSobre.innerText =
-              "Minha jornada no mundo do desenvolvimento! 💻✨";
-            textoSobre.innerText =
-              "Olá! Sou Lucas Marcio (ou apenas Mrc.Dev) e sou um profissional em formação na área de Engenharia de Software, apaixonado por tecnologia e inovação. Minha jornada na tecnologia começou com o desenvolvimento de aplicativos móveis, mas logo expandi meu interesse para arquitetura de software, engenharia de sistemas e computação em nuvem. " +
-              "Busco sempre criar soluções eficientes, escaláveis e de alto desempenho, utilizando as melhores práticas e tecnologias disponíveis. Atualmente, estou aprimorando minhas habilidades em design de sistemas, DevOps e desenvolvimento backend, aprofundando meus conhecimentos para construir aplicações robustas e confiáveis. " +
-              "Tenho experiência com Kotlin, Java e tecnologias backend, além de trabalhar com integração de APIs, otimização de desempenho e engenharia de software. Acredito que a tecnologia pode transformar negócios e impactar a vida das pessoas de forma positiva. Meu objetivo é continuar aprendendo e contribuindo para projetos que façam a diferença.";
-
-            tituloProjetos.innerText = "Meus Projetos";
-            textoProjetos.innerText =
-              "Confira alguns dos projetos que desenvolvi.";
-            tituloContato.innerText = "Contato";
-            textoContato.innerText =
-              "Entre em contato comigo através das redes sociais ou e-mail.";
-            botaoProjeto.innerText = "🔗 Ver Projeto ZapCar";
-            linkSobre.innerText = "Sobre mim";
-            linkProjetos.innerText = "Projetos";
-            linkContato.innerText = "Contato";
-          }
+        if (language === "en") {
+          tituloIntroducao.innerText =
+            "My journey in the world of development! 💻✨";
+          textoIntroducao.innerText =
+            "Hello! I'm Lucas Marcio (or just Mrc.Dev), a professional in training in the field of Software Engineering, passionate about technology and innovation. My journey in technology began with mobile app development, but I quickly expanded my interest to software architecture, systems engineering, and cloud computing. I always strive to create efficient, scalable, and high-performance solutions using the best practices and technologies available. Currently, I am improving my skills in system design, DevOps, and backend development, deepening my knowledge to build robust and reliable applications. I have experience with Kotlin, Java, and backend technologies, as well as working with API integration, performance optimization, and software engineering. I believe that technology can transform businesses and positively impact people's lives. My goal is to keep learning and contributing to projects that make a difference.";
+          botoesProjeto[0].innerText = "🔗 View ZapCar Project";
+          botoesProjeto[1].innerText = "🔗 View Mrc81 Bank Project";
+          botoesProjeto[2].innerText = "🔗 View API Project";
+          botoesProjeto[3].innerText = "🔗 View infinity-bank Project";
+          linkSobre.innerText = "About me";
+          linkProjetos.innerText = "Projects";
+          linkContato.innerText = "Contact";
+          tituloProjetos.innerText = "My Projects";
+          textoProjetos.innerText =
+            "Check out some of the projects I have developed.";
+          tituloContato.innerText = "Contact";
+          textoContato.innerText = "Contact me through social media or email.";
+          botaoCurriculo.innerText = "📄 Download Resume";
+          textoCurriculo.innerText =
+            "If you want to know more about my experience and skills, you can download my full resume by clicking the button below.";
+          tituloCurriculo.innerText = "Resume";
+        } else {
+          tituloIntroducao.innerText =
+            "Minha jornada no mundo do desenvolvimento! 💻✨";
+          textoIntroducao.innerText =
+            "Olá! Sou Lucas Marcio (ou apenas Mrc.Dev), profissional em formação na área de Engenharia de Software, apaixonado por tecnologia e inovação. Minha jornada na tecnologia começou com desenvolvimento de aplicativos móveis, mas rapidamente expandi meu interesse para arquitetura de software, engenharia de sistemas e computação em nuvem. Sempre busco criar soluções eficientes, escaláveis ​​e de alta performance, utilizando as melhores práticas e tecnologias disponíveis. Atualmente, estou aprimorando minhas habilidades em design de sistemas, DevOps e desenvolvimento backend, aprofundando meus conhecimentos para construir aplicações robustas e confiáveis. Tenho experiência com Kotlin, Java e tecnologias backend, além de trabalhar com integração de APIs, otimização de performance e engenharia de software. Acredito que a tecnologia pode transformar negócios e impactar positivamente a vida das pessoas. Meu objetivo é continuar aprendendo e contribuindo para projetos que façam a diferença.";
+          botoesProjeto[0].innerText = "🔗 Ver Projeto ZapCar";
+          botoesProjeto[1].innerText = "🔗 Ver Projeto Mrc81 Bank";
+          botoesProjeto[2].innerText = "🔗 Ver Projeto de API";
+          botoesProjeto[3].innerText = "🔗 Ver Projeto infinity-bank";
+          linkSobre.innerText = "Sobre mim";
+          linkProjetos.innerText = "Projetos";
+          linkContato.innerText = "Contato";
+          tituloProjetos.innerText = "Meus Projetos";
+          textoProjetos.innerText =
+            "Confira alguns dos projetos que desenvolvi.";
+          tituloContato.innerText = "Contato";
+          textoContato.innerText =
+            "Entre em contato comigo através das redes sociais ou e-mail.";
+          botaoCurriculo.innerText = "📄 Baixar Currículo";
+          textoCurriculo.innerText =
+            "Se você deseja saber mais sobre minha experiência e habilidades, pode baixar meu currículo completo clicando no botão abaixo.";
+          tituloCurriculo.innerText = "Currículo";
         }
-
-        window.mudarIdioma = function () {
-          const isPortuguese = document.documentElement.lang === "pt-br";
-          const newLanguage = isPortuguese ? "en" : "pt-br";
-          document.documentElement.lang = newLanguage;
-
-          localStorage.setItem("selectedLanguage", newLanguage); // Salva no localStorage
-          document.documentElement.lang = newLanguage;
-          atualizarTextos(newLanguage);
-        };
-      });
-    </script>
-    <script>
-      /// Função para alternar o tema e salvar a preferência
-      function mudarTema() {
-        const body = document.body;
-        body.classList.toggle("dark-mode");
-
-        // Alterar a fonte no modo escuro
-        body.style.fontFamily = body.classList.contains("dark-mode")
-          ? "Courier New, monospace"
-          : "Arial, sans-serif";
-
-        // Atualizar imagem do botão
-        const darkModeButton = document.querySelector(".darck img");
-        if (darkModeButton) {
-          darkModeButton.src = body.classList.contains("dark-mode")
-            ? "imagem/light.png"
-            : "imagem/dark.png";
-        }
-
-        // Atualizar o botão de projeto
-        const botaoProjeto = document.querySelector(".botao-projeto");
-        if (botaoProjeto) {
-          botaoProjeto.innerText = body.classList.contains("dark-mode")
-            ? "🔮 Ver Projeto ZapCar"
-            : "🔗 Ver Projeto ZapCar";
-        }
-
-        // Salvar a preferência do tema no localStorage
-        localStorage.setItem(
-          "modoEscuro",
-          body.classList.contains("dark-mode")
-        );
       }
 
-      // Aplicar o tema salvo ao carregar a página
       document.addEventListener("DOMContentLoaded", () => {
-        const body = document.body;
-        const darkModeButton = document.querySelector(".darck img");
-        const botaoProjeto = document.querySelector(".botao-projeto");
-
-        // Verificar se o modo escuro foi ativado no localStorage
-        const modoEscuroSalvo = localStorage.getItem("modoEscuro");
-
-        if (modoEscuroSalvo === "true") {
-          body.classList.add("dark-mode");
-          body.style.fontFamily = "Courier New, monospace";
-
-          if (darkModeButton) {
-            darkModeButton.src = "imagem/light.png"; // Altere para o caminho da imagem desejada
-          }
-
-          if (botaoProjeto) {
-            botaoProjeto.innerText = "🔮 Ver Projeto ZapCar"; // Texto para o modo escuro
-          }
-        }
+        const savedLanguage =
+          localStorage.getItem("selectedLanguage") || "pt-br";
+        atualizarTextosIntroducao(savedLanguage);
+        updateVisitCount();
       });
+
+      window.mudarIdioma = function (event) {
+        if (event) event.preventDefault();
+        const newLanguage =
+          document.documentElement.lang === "pt-br" ? "en" : "pt-br";
+        localStorage.setItem("selectedLanguage", newLanguage);
+        document.documentElement.lang = newLanguage;
+        atualizarTextosIntroducao(newLanguage);
+      };
+
+      // Função para obter e incrementar a contagem de visitas
+      async function updateVisitCount() {
+        const response = await fetch("/api/increment-visit", {
+          method: "POST",
+        });
+        const data = await response.json();
+        console.log(`Visitas: ${data.count}`);
+        document.getElementById(
+          "visit-count"
+        ).innerText = `Visitas: ${data.count}`;
+      }
+
+      // Chamar a função ao carregar a página
+      document.addEventListener("DOMContentLoaded", updateVisitCount);
     </script>
   </body>
 </html>

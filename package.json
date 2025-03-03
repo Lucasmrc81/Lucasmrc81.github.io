@@ -1,0 +1,16 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "**Mrc.Dev** é o meu portfólio online, criado para mostrar alguns dos projetos que desenvolvi ao longo da minha jornada como desenvolvedor. O objetivo deste site é apresentar meu trabalho e fornecer um meio de contato para quem deseja conhecer mais sobre minhas habilidades e projetos.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
