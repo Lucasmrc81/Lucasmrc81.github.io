@@ -44,7 +44,7 @@ section#projetos {
 
 /* Títulos dentro dos cards */
 .projeto h2 {
-  font-size: 4px;
+  font-size: 30px;
   margin-top: 20px; /* Afastamento do título do conteúdo */
   margin-bottom: 45px;
 }
