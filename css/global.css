@@ -149,11 +149,11 @@ nav {
 @media (max-width: 768px) {
   /* Ajuste o logo */
   .logo {
-    font-size: 200px;
+    font-size: 50px; /* Reduz o tamanho do nome */
   }
 
   .logo2 {
-    font-size: 12px;
+    font-size: 14px; /* Ajusta o tamanho do subtítulo "Dev" */
   }
 
   /* Reduza o tamanho do menu */

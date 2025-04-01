@@ -173,6 +173,7 @@
     width: 90%; /* Faz os cards ocuparem quase toda a largura */
     margin: 20px auto; /* Centraliza os cards */
     padding: 15px; /* Reduz o espaçamento interno */
+    height: auto; /* Ajusta a altura automaticamente */
   }
 
   .curso-nome {
@@ -197,5 +198,9 @@
   .imagem-experiencia {
     width: 200px; /* Reduz o tamanho da imagem */
     margin: 20px auto; /* Centraliza a imagem */
+  }
+
+  #linha-vertical {
+    display: none; /* Remove a linha vertical em telas pequenas */
   }
 }
