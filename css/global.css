@@ -14,6 +14,11 @@ body {
 
 /* Corpo do conteúdo */
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
   font-family: "Orbitron", "Arial", "sans-serif" !important;
   font-weight: bold;
   line-height: 1.6;
@@ -149,11 +154,11 @@ nav {
 @media (max-width: 768px) {
   /* Ajuste o logo */
   .logo {
-    font-size: 50px; /* Reduz o tamanho do nome */
+    font-size: 40px; /* Reduz o tamanho do texto "Lucas Mrc" */
   }
 
   .logo2 {
-    font-size: 14px; /* Ajusta o tamanho do subtítulo "Dev" */
+    font-size: 12px; /* Reduz o tamanho do texto "Dev" */
   }
 
   /* Reduza o tamanho do menu */
@@ -172,6 +177,8 @@ nav {
     flex-direction: column; /* Empilha o logo e o "Dev" */
     align-items: center;
     padding-right: 0;
+    align-items: center; /* Centraliza o logo */
+    margin-bottom: 10px;
   }
 
   /* Ajuste a navegação */
@@ -208,11 +215,11 @@ nav {
 @media (max-width: 480px) {
   /* Ajuste o logo */
   .logo {
-    font-size: 150px;
+    font-size: 30px; /* Reduz ainda mais o tamanho do texto "Lucas Mrc" */
   }
 
   .logo2 {
-    font-size: 10px;
+    font-size: 10px; /* Reduz ainda mais o tamanho do texto "Dev" */
   }
 
   /* Menus ainda menores */
