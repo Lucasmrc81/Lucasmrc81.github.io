@@ -14,11 +14,6 @@ body {
 
 /* Corpo do conteúdo */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  text-align: center;
-  padding: 20px;
   font-family: "Orbitron", "Arial", "sans-serif" !important;
   font-weight: bold;
   line-height: 1.6;
@@ -231,5 +226,33 @@ nav {
   .nav-links {
     gap: 5px;
     margin-right: 0;
+  }
+
+  /* Ajuste o menu para ocupar toda a largura */
+  .nav-links {
+    flex-direction: column; /* Empilha os itens do menu */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    gap: 5px; /* Espaçamento entre os itens */
+    margin-left: 10px; /* Adiciona margem à esquerda */
+  }
+
+  .nav-links a {
+    font-size: 18px; /* Reduz o tamanho da fonte */
+    padding: 5px 8px; /* Ajusta o espaçamento interno */
+  }
+
+  /* Ajuste do tamanho da fonte do título na logo-container */
+  .logo-container .logo {
+    font-size: 24px; /* Reduz o tamanho do título principal */
+  }
+
+  .logo-container .logo2 {
+    font-size: 12px; /* Reduz o tamanho do subtítulo */
+  }
+
+  /* Ajuste do rodapé */
+  footer {
+    padding: 10px; /* Reduz o espaçamento interno */
+    font-size: 14px; /* Reduz o tamanho da fonte */
   }
 }
