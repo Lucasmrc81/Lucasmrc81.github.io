@@ -1,0 +1,161 @@
+#formacao-profissional {
+  position: absolute;
+  top: 220px;
+  right: 200px;
+  width: 720px;
+  color: #fff;
+  background-color: transparent;
+  text-align: left;
+}
+
+.imagem-experiencia {
+  position: absolute;
+  top: 120%; /* Move a imagem mais para baixo */
+  right: 0; /* Alinha à direita */
+  margin-right: 10px; /* Remove margem à direita */
+  transform: translateY(-50%); /* Ajusta para centralização */
+  width: 380px; /* Define o tamanho da imagem */
+  opacity: 0.4; /* Torna a imagem quase apagada */
+  pointer-events: none; /* Impede interação com a imagem */
+  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+#titulo-formacao {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 50px; /* Espaçamento superior */
+  margin-bottom: 50px; /* Espaçamento inferior */
+}
+
+#titulo-formacao::before {
+  content: "+"; /* Adiciona o "+" antes do texto */
+  font-size: 1.8rem; /* Tamanho do "+" */
+  color: #1cff7a; /* Cor verde */
+  margin-right: 5px; /* Espaçamento entre o "+" e o texto */
+}
+
+.formacao-titulo {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.formacao-instituicao {
+  font-size: 1rem;
+  color: #1cff7a;
+  margin-bottom: 15px;
+}
+
+.formacao-detalhes {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+#formacao-profissional .formacao-header {
+  margin-bottom: 70px; /* Adiciona espaçamento inferior entre os blocos */
+}
+
+#linha-vertical {
+  position: absolute; /* Define a posição como absoluta */
+  top: 30%; /* Move o início da linha para 20% da altura do container */
+  bottom: 0%; /* Define o final da linha a 10% antes do final do container */
+  left: 50%; /* Centraliza a linha no meio da tela */
+  transform: translateX(
+    -50%
+  ); /* Garante que a linha fique exatamente no centro */
+  width: 2px; /* Mantém a largura da linha */
+  background-color: #1cff7a; /* Cor da linha */
+  z-index: 1; /* Garante que a linha fique acima do fundo */
+}
+
+#titulo-sobre-introducao {
+  font-size: 1.8rem; /* Ajusta o tamanho da fonte */
+  text-align: left; /* Alinha o título à esquerda */
+  margin-top: 30px; /* Espaçamento superior */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  margin-left: 32px; /* Adiciona margem à esquerda */
+  color: #1cff7a; /* Cor do título */
+}
+
+#titulo-experiencia {
+  color: #1cff7a;
+  font-size: 2.1rem; /* Tamanho da fonte do título */
+  text-align: left; /* Alinha o título à esquerda */
+  margin-left: 72px; /* Espaçamento à esquerda */
+  margin-top: 30px; /* Espaçamento superior */
+}
+
+#subtitulo-experiencia {
+  font-size: 1.5rem; /* Mesmo tamanho do título */
+  text-align: left; /* Alinha o subtítulo à esquerda */
+  color: #ffffff; /* Define a cor branca para o texto */
+  margin-top: 10px; /* Reduz o espaçamento superior */
+  margin-left: 72px; /* Espaçamento à esquerda */
+  margin-bottom: 40px; /* Espaçamento inferior */
+}
+
+#subtitulo-experiencia::before {
+  content: "+"; /* Adiciona o "+" antes do texto */
+  font-size: 1.5rem; /* Mesmo tamanho do subtítulo */
+  color: #1cff7a !important; /* Garante que o "+" fique verde */
+  margin-right: 5px; /* Adiciona espaço entre o "+" e o texto */
+}
+
+#subtitulo-experiencia + * {
+  margin-top: 20px; /* Garante espaçamento no próximo elemento */
+}
+
+.card {
+  background-color: #022907; /* Cor de fundo do card */
+  border-radius: 10px; /* Bordas arredondadas */
+  width: 720px; /* Largura fixa */
+  height: 280px; /* Altura fixa */
+  color: #ffffff; /* Cor do texto */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  position: relative; /* Permite posicionamento de elementos adicionais */
+  left: 52px; /* Move o card mais para a esquerda */
+  display: flex; /* Para centralizar o conteúdo */
+  flex-direction: column; /* Alinha o conteúdo verticalmente */
+  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  justify-content: flex-start; /* Garante que o conteúdo seja alinhado ao topo */
+  padding: 20px; /* Adiciona espaçamento interno */
+  text-align: left; /* Alinha o texto à esquerda */
+  margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+}
+
+.curso-nome {
+  font-size: 1.5rem; /* Tamanho da fonte do nome do curso */
+  margin-right: 10px; /* Espaço à direita do nome do curso */
+}
+
+.faculdade-nome {
+  font-size: 1rem; /* Tamanho da fonte do nome da faculdade reduzido */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  color: #1cff7a; /* Cor levemente mais clara */
+  margin-top: 10px; /* Adiciona um pequeno espaçamento acima */
+}
+
+.curso-descricao {
+  font-size: 1rem; /* Tamanho da fonte da descrição */
+  margin-bottom: 0; /* Remove espaçamento inferior */
+  color: rgba(255, 255, 255, 0.7); /* Cor mais clara */
+  margin-top: 10px; /* Adiciona espaçamento superior para a descrição */
+}
+
+/* Flexbox para a estrutura do cabeçalho do curso */
+.curso-header {
+  display: flex; /* Usamos flexbox para alinhar o nome do curso e o botão na horizontal */
+  justify-content: space-between; /* Alinha o nome do curso à esquerda e o botão à direita */
+  align-items: center; /* Garante que ambos fiquem alinhados verticalmente */
+  width: 100%; /* O cabeçalho ocupa toda a largura disponível */
+}
+
+.status-botao {
+  background-color: #1cff7a; /* Cor de fundo do botão */
+  color: #022907; /* Cor do texto do botão */
+  border: none; /* Remove bordas */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 5px 10px; /* Espaçamento interno */
+  font-size: 0.9rem; /* Tamanho da fonte */
+  font-weight: bold; /* Engrossa a fonte */
+  cursor: not-allowed; /* Cursor indicando que o botão está desativado */
+}

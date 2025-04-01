@@ -1,0 +1,205 @@
+/* Importação da fonte */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+
+/* Corpo e layout principal */
+/* Garantir que o layout de todo o body esteja configurado para flex */
+html,
+body {
+  height: 100%; /* Certifique-se que o body ocupe toda a altura */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Usar flexbox para garantir o layout correto */
+  flex-direction: column; /* Organizar os elementos de cima para baixo */
+}
+
+/* Corpo do conteúdo */
+body {
+  font-family: "Orbitron", "Arial", "sans-serif" !important;
+  font-weight: bold;
+  line-height: 1.6;
+  background-color: #1a1a1a;
+  color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  justify-content: space-between; /* Isso permite que o footer se alinhe ao final */
+}
+
+/* Conteúdo principal da página (podendo ser ajustado conforme necessário) */
+main {
+  flex-grow: 1; /* Faz o conteúdo crescer para empurrar o footer para baixo */
+  padding: 20px;
+}
+
+/* Estilização do footer */
+footer {
+  background-color: #022907;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px; /* Empurra o footer para baixo */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #022907;
+  font-family: "Orbitron", sans-serif !important; /* Forçar a aplicação da fonte */
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+  padding: 20px 40px;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 9999;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  flex-direction: column; /* Mantém "Lucas Mrc" e "Dev" alinhados verticalmente */
+  align-items: flex-start; /* Alinha ambos à esquerda */
+  padding-right: 0px;
+}
+
+.logo {
+  font-size: 555px;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap; /* Garante que "Lucas Mrc" não quebre para outra linha */
+  margin-bottom: -5px; /* Remove o espaço entre "Lucas Mrc" e "Dev" */
+}
+
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo2 {
+  font-size: 18px;
+  color: rgba(265, 265, 265, 0.4); /* Aumenta a transparência do "Dev" */
+  margin-top: 0; /* Remove qualquer margem superior */
+  align-self: flex-start; /* Garante que "Dev" fique alinhado à esquerda */
+}
+
+/* Estilos para o menu */
+nav {
+  font-family: "Orbitron", sans-serif !important; /* Forçar a fonte Orbitron no menu */
+  background-color: transparent; /* Remove fundo cinza */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0; /* Remove espaçamento interno */
+  width: 100%; /* Garante que o menu ocupe toda a largura */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.nav-links {
+  font-family: "Orbitron", sans-serif !important;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px; /* Espaçamento entre os itens */
+  width: 100%; /* Faz a lista ocupar toda a largura */
+  justify-content: flex-end; /* Alinha os itens à direita */
+  margin-right: 100px; /* Adiciona margem à direita para afastar do limite */
+}
+
+.nav-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-size: 28px;
+  text-decoration: none;
+  font-family: "Orbitron", "Arial", sans-serif !important; /* Certifique-se de que a fonte Orbitron seja aplicada */
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1cff7a;
+}
+
+.nav-links a:active,
+.nav-links a:focus {
+  color: #1cff7a;
+  text-shadow: 0px 0px 10px #1cff7a;
+}
+
+/* Adaptação para telas menores (celulares) */
+@media (max-width: 768px) {
+  /* Ajuste o logo */
+  .logo {
+    font-size: 200px;
+  }
+
+  .logo2 {
+    font-size: 12px;
+  }
+
+  /* Reduza o tamanho do menu */
+  .nav-links a {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Empilha os itens do menu em telas pequenas */
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .logo-container {
+    flex-direction: column; /* Empilha o logo e o "Dev" */
+    align-items: center;
+    padding-right: 0;
+  }
+
+  /* Ajuste a navegação */
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+/* Adaptação para telas de smartphones (máximo de 480px de largura) */
+@media (max-width: 480px) {
+  /* Ajuste o logo */
+  .logo {
+    font-size: 150px;
+  }
+
+  .logo2 {
+    font-size: 10px;
+  }
+
+  /* Menus ainda menores */
+  .nav-links a {
+    font-size: 18px;
+    padding: 5px 8px;
+  }
+
+  .nav-links {
+    gap: 5px;
+    margin-right: 0;
+  }
+}

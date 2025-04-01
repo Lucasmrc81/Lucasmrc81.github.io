@@ -1,0 +1,89 @@
+/* Seção de Contato */
+#contato {
+  display: flex;
+  justify-content: space-between; /* Distribui o conteúdo e a imagem */
+  align-items: center; /* Alinha os itens no centro verticalmente */
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 50px 20px;
+  background-color: #022907;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 900px; /* Aumenta o máximo para caber a imagem ao lado */
+  margin: 40px auto;
+}
+
+/* Estilo para a parte de texto dentro do card */
+#contato .contato-info {
+  flex: 1; /* Faz o conteúdo ocupar todo o espaço disponível */
+  margin-right: 20px; /* Espaçamento entre o conteúdo e a imagem */
+}
+
+#titulo-contato {
+  font-size: 2.6rem;
+  color: #00ff99;
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o título */
+}
+
+#texto-contato {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+#contato ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+/* Estilo para a imagem fora do card */
+#contato img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px; /* Arredonda as bordas da imagem */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  transition: transform 0.3s ease; /* Adiciona transição suave ao passar o mouse */
+}
+
+/* Redes Sociais */
+.redes-sociais {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social-botao {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-botao img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.social-botao:hover {
+  transform: scale(1.1);
+}
+/* Estilização da imagem de fundo */
+.imagem-fundo {
+  position: absolute;
+  top: 76%;
+  right: 0;
+  margin-right: 0px;
+  transform: translateY(-50%);
+  width: 380px;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1;
+}

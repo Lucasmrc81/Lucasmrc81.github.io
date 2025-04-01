@@ -4,247 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projetos - Lucas Marcio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/projeto.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html" class="logo">Mrc.Dev</a>
+      <nav aria-label="Navegação principal">
+        <div class="logo-container">
+          <h1 class="logo"><a href="index.html">Lucas Mrc</a></h1>
+          <h2 class="logo2">Dev</h2>
+        </div>
         <ul class="nav-links">
-          <li><a href="sobre.html" id="link-sobre">Sobre mim</a></li>
-          <li><a href="projetos.html" id="link-projetos">Projetos</a></li>
-          <li><a href="index.html#contato" id="link-contato">Contato</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="experiencia.html">Experiência</a></li>
+          <li><a href="tecnologia.html">Tecnologia</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
-        <a href="#" class="idioma" onclick="mudarIdioma(event)">
-          <img src="imagem/language.png" alt="Idioma" />
-        </a>
-        <a href="#" class="darck" onclick="mudarTema()">
-          <img src="imagem/dark.png" alt="Tema escuro" />
-        </a>
       </nav>
     </header>
-
     <section id="projetos">
-      <h1 id="titulo-projetos" class="titulo-principal titulo-azul">
-        Meus Projetos
-      </h1>
-      <div class="projeto">
-        <h2 id="titulo-zapcar">ZapCar</h2>
-        <p id="texto-zapcar">
-          O ZapCar nasceu de um desafio proposto pela DIO.me, onde tive a
-          oportunidade de explorar conceitos fundamentais do desenvolvimento
-          mobile. A ideia era criar uma plataforma que facilitasse a locação de
-          veículos elétricos, proporcionando uma experiência intuitiva e moderna
-          para os usuários. Durante o desenvolvimento, me aprofundei no uso de
-          Kotlin, aprimorando habilidades como consumo de APIs, manipulação de
-          listas e gerenciamento de estado. Esse projeto foi um divisor de águas
-          na minha jornada, pois consolidou meu entendimento sobre o ecossistema
-          Android e me preparou para desafios ainda maiores.
-        </p>
-        <button
-          class="botao-projeto"
-          onclick="window.open('https://github.com/Lucasmrc81/ZapCar', '_blank')"
-        >
-          🔗 Ver Repositório
-        </button>
-      </div>
+      <h2 class="titulo-principal">Meus Projetos</h2>
 
-      <div class="projeto">
-        <h2 id="titulo-mrc81bank">Mrc81 Bank</h2>
-        <p id="texto-mrc81bank">
-          O Mrc81 Bank surgiu da minha curiosidade em entender como funcionam os
-          sistemas bancários e de pagamentos online. Inspirado no funcionamento
-          de grandes instituições financeiras, decidi criar um simulador
-          bancário que permitisse aos usuários realizar operações como
-          depósitos, saques e transferências via Pix. Desenvolver esse sistema
-          me fez mergulhar em conceitos como autenticação segura, estruturação
-          de banco de dados e boas práticas de código. Cada funcionalidade
-          implementada foi um aprendizado valioso, tornando este projeto um dos
-          pilares do meu portfólio.
-        </p>
-        <button
-          class="botao-projeto"
-          onclick="window.open('https://github.com/Lucasmrc81/Banco-do-Lucas', '_blank')"
-        >
-          🔗 Ver Repositório
-        </button>
-      </div>
+      <div class="projeto-container">
+        <div class="projeto">
+          <h2 id="titulo-zapcar">ZapCar</h2>
+          <p id="texto-zapcar">
+            O ZapCar nasceu de um desafio proposto pela DIO.me, onde tive a
+            oportunidade de explorar conceitos fundamentais do desenvolvimento
+            mobile. A ideia era criar uma plataforma que facilitasse a locação
+            de veículos elétricos, proporcionando uma experiência intuitiva e
+            moderna para os usuários. Durante o desenvolvimento, me aprofundei
+            no uso de Kotlin, aprimorando habilidades como consumo de APIs,
+            manipulação de listas e gerenciamento de estado. Esse projeto foi um
+            divisor de águas na minha jornada, pois consolidou meu entendimento
+            sobre o ecossistema Android e me preparou para desafios ainda
+            maiores.
+          </p>
+          <div class="projeto-botao">
+            <a href="https://github.com/Lucasmrc81/ZapCar" target="_blank">
+              <button class="projeto-btn">
+                <img
+                  src="imagem/github.png"
+                  alt="Ver Repositório"
+                  class="imagem-repositorio"
+                />
+              </button>
+            </a>
+          </div>
+        </div>
 
-      <div class="projeto">
-        <h2 id="titulo-api">API My-Api</h2>
-        <p id="texto-api">
-          Sempre tive interesse em entender melhor como os sistemas se
-          comunicam, e foi assim que nasceu a ideia de criar minha própria API
-          bancária. Desenvolvi a My-Api para gerenciar contas bancárias,
-          oferecendo funcionalidades como registro de usuários, operações de
-          crédito e débito, além de autenticação JWT. Utilizando Node.js e
-          Express, pude explorar o desenvolvimento de endpoints RESTful e a
-          importância da segurança no backend. Esse projeto me permitiu
-          aprofundar no mundo das APIs, solidificando conceitos que hoje aplico
-          em projetos mais complexos.
-        </p>
-        <button
-          class="botao-projeto"
-          onclick="window.open('https://github.com/Lucasmrc81/Api', '_blank')"
-        >
-          🔗 Ver Repositório
-        </button>
-      </div>
+        <div class="projeto">
+          <h2 id="titulo-mrc81bank">Mrc81 Bank</h2>
+          <p id="texto-mrc81bank">
+            O Mrc81 Bank surgiu da minha curiosidade em entender como funcionam
+            os sistemas bancários e de pagamentos online. Inspirado no
+            funcionamento de grandes instituições financeiras, decidi criar um
+            simulador bancário que permitisse aos usuários realizar operações
+            como depósitos, saques e transferências via Pix. Desenvolver esse
+            sistema me fez mergulhar em conceitos como autenticação segura,
+            estruturação de banco de dados e boas práticas de código. Cada
+            funcionalidade implementada foi um aprendizado valioso, tornando
+            este projeto um dos pilares do meu portfólio.
+          </p>
+          <div class="projeto-botao">
+            <a
+              href="https://github.com/Lucasmrc81/Banco-do-Lucas"
+              target="_blank"
+            >
+              <button class="projeto-btn">
+                <img
+                  src="imagem/github.png"
+                  alt="Ver Repositório"
+                  class="imagem-repositorio"
+                />
+              </button>
+            </a>
+          </div>
+        </div>
 
-      <div class="projeto">
-        <h2 id="titulo-infinitybank">Infinity Bank</h2>
-        <p id="texto-infinitybank">
-          O Infinity Bank foi mais do que um projeto, foi um verdadeiro desafio
-          pessoal. Minha intenção era criar um banco digital funcional,
-          proporcionando uma experiência de usuário fluida e segura. Utilizando
-          HTML, CSS e JavaScript, desenvolvi uma interface interativa e moderna,
-          com funcionalidades como consulta de saldo, pagamentos, transferências
-          e extrato bancário. Durante o desenvolvimento, aprendi sobre
-          estruturação de interfaces responsivas e implementação de interações
-          dinâmicas. Esse projeto foi um marco na minha evolução como
-          desenvolvedor, demonstrando minha capacidade de criar aplicações
-          completas e bem estruturadas.
-        </p>
-        <button
-          class="botao-projeto"
-          onclick="window.open('https://github.com/Lucasmrc81/infinity-bank', '_blank')"
-        >
-          🔗 Ver Repositório
-        </button>
+        <div class="projeto">
+          <h2 id="titulo-api">API My-Api</h2>
+          <p id="texto-api">
+            Sempre tive interesse em entender melhor como os sistemas se
+            comunicam, e foi assim que nasceu a ideia de criar minha própria API
+            bancária. Desenvolvi a My-Api para gerenciar contas bancárias,
+            oferecendo funcionalidades como registro de usuários, operações de
+            crédito e débito, além de autenticação JWT. Utilizando Node.js e
+            Express, pude explorar o desenvolvimento de endpoints RESTful e a
+            importância da segurança no backend. Esse projeto me permitiu
+            aprofundar no mundo das APIs, solidificando conceitos que hoje
+            aplico em projetos mais complexos.
+          </p>
+          <div class="projeto-botao">
+            <a href="https://github.com/Lucasmrc81/Api" target="_blank">
+              <button class="projeto-btn">
+                <img
+                  src="imagem/github.png"
+                  alt="Ver Repositório"
+                  class="imagem-repositorio"
+                />
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <h2 id="titulo-infinitybank">Infinity Bank</h2>
+          <p id="texto-infinitybank">
+            O Infinity Bank foi mais do que um projeto, foi um verdadeiro
+            desafio pessoal. Minha intenção era criar um banco digital
+            funcional, proporcionando uma experiência de usuário fluida e
+            segura. Utilizando HTML, CSS e JavaScript, desenvolvi uma interface
+            interativa e moderna, com funcionalidades como consulta de saldo,
+            pagamentos, transferências e extrato bancário. Durante o
+            desenvolvimento, aprendi sobre estruturação de interfaces
+            responsivas e implementação de interações dinâmicas. Esse projeto
+            foi um marco na minha evolução como desenvolvedor, demonstrando
+            minha capacidade de criar aplicações completas e bem estruturadas.
+          </p>
+          <div class="projeto-botao">
+            <a
+              href="https://github.com/Lucasmrc81/infinity-bank"
+              target="_blank"
+            >
+              <button class="projeto-btn">
+                <img
+                  src="imagem/github.png"
+                  alt="Ver Repositório"
+                  class="imagem-repositorio"
+                />
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
+      <img src="imagem/imagen.png" alt="Tecnologia" class="imagem-fundo" />
     </section>
 
     <footer>
       <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
       <p id="visit-count"></p>
     </footer>
-
-    <script src="scripts/idioma.js"></script>
-    <script src="scripts/tema.js"></script>
-    <script>
-      // Função para obter e incrementar a contagem de visitas
-      async function updateVisitCount() {
-        const response = await fetch("/api/increment-visit", {
-          method: "POST",
-        });
-        const data = await response.json();
-        console.log(`Visitas: ${data.count}`);
-        document.getElementById(
-          "visit-count"
-        ).innerText = `Visitas: ${data.count}`;
-      }
-
-      // Chamar a função ao carregar a página
-      document.addEventListener("DOMContentLoaded", updateVisitCount);
-
-      function mudarTema() {
-        const body = document.body;
-        body.classList.toggle("dark-mode");
-
-        body.style.fontFamily = body.classList.contains("dark-mode")
-          ? "Courier New, monospace"
-          : "Arial, sans-serif";
-
-        const darkModeButton = document.querySelector(".darck img");
-        darkModeButton.src = body.classList.contains("dark-mode")
-          ? "imagem/light.png"
-          : "imagem/dark.png";
-
-        const botoesProjeto = document.querySelectorAll(".botao-projeto");
-        botoesProjeto.forEach((botaoProjeto) => {
-          botaoProjeto.innerText = body.classList.contains("dark-mode")
-            ? `🔮 ${botaoProjeto.innerText.replace("🔗", "").trim()}`
-            : `🔗 ${botaoProjeto.innerText.replace("🔮", "").trim()}`;
-        });
-
-        localStorage.setItem(
-          "modoEscuro",
-          body.classList.contains("dark-mode")
-        );
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        if (localStorage.getItem("modoEscuro") === "true") {
-          mudarTema();
-        }
-      });
-
-      function atualizarTextosProjetos(language) {
-        const tituloProjetos = document.getElementById("titulo-projetos");
-        const tituloZapCar = document.getElementById("titulo-zapcar");
-        const textoZapCar = document.getElementById("texto-zapcar");
-        const tituloMrc81Bank = document.getElementById("titulo-mrc81bank");
-        const textoMrc81Bank = document.getElementById("texto-mrc81bank");
-        const tituloApi = document.getElementById("titulo-api");
-        const textoApi = document.getElementById("texto-api");
-        const tituloInfinityBank = document.getElementById(
-          "titulo-infinitybank"
-        );
-        const textoInfinityBank = document.getElementById("texto-infinitybank");
-        const botoesProjeto = document.querySelectorAll(".botao-projeto");
-        const linkSobre = document.getElementById("link-sobre");
-        const linkProjetos = document.getElementById("link-projetos");
-        const linkContato = document.getElementById("link-contato");
-
-        if (language === "en") {
-          tituloProjetos.innerText = "My Projects";
-          tituloZapCar.innerText = "ZapCar";
-          textoZapCar.innerText =
-            "ZapCar was born from a challenge proposed by DIO.me, where I had the opportunity to explore fundamental concepts of mobile development. The idea was to create a platform that facilitates the rental of electric vehicles, providing an intuitive and modern experience for users. During development, I delved into the use of Kotlin, enhancing skills such as API consumption, list manipulation, and state management. This project was a turning point in my journey, as it consolidated my understanding of the Android ecosystem and prepared me for even greater challenges.";
-          tituloMrc81Bank.innerText = "Mrc81 Bank";
-          textoMrc81Bank.innerText =
-            "Mrc81 Bank arose from my curiosity to understand how banking and online payment systems work. Inspired by the operation of large financial institutions, I decided to create a banking simulator that would allow users to perform operations such as deposits, withdrawals, and transfers via Pix. Developing this system made me dive into concepts such as secure authentication, database structuring, and coding best practices. Each implemented functionality was a valuable learning experience, making this project one of the pillars of my portfolio.";
-          tituloApi.innerText = "API My-Api";
-          textoApi.innerText =
-            "I have always been interested in better understanding how systems communicate, and that’s how the idea of creating my own banking API was born. I developed My-Api to manage bank accounts, offering functionalities such as user registration, credit and debit operations, and JWT authentication. Using Node.js and Express, I was able to explore the development of RESTful endpoints and the importance of backend security. This project allowed me to delve into the world of APIs, solidifying concepts that I now apply to more complex projects.";
-          tituloInfinityBank.innerText = "Infinity Bank";
-          textoInfinityBank.innerText =
-            "Infinity Bank was more than a project; it was a personal challenge. My intention was to create a functional digital bank, providing a smooth and secure user experience. Using HTML, CSS, and JavaScript, I developed an interactive and modern interface with functionalities such as balance inquiry, payments, transfers, and bank statements. During development, I learned about structuring responsive interfaces and implementing dynamic interactions. This project was a milestone in my evolution as a developer, demonstrating my ability to create complete and well-structured applications.";
-          botoesProjeto[0].innerText = "🔗 View Repository";
-          botoesProjeto[1].innerText = "🔗 View Repository";
-          botoesProjeto[2].innerText = "🔗 View Repository";
-          botoesProjeto[3].innerText = "🔗 View Repository";
-          linkSobre.innerText = "About me";
-          linkProjetos.innerText = "Projects";
-          linkContato.innerText = "Contact";
-        } else {
-          tituloProjetos.innerText = "Meus Projetos";
-          tituloZapCar.innerText = "ZapCar";
-          textoZapCar.innerText =
-            "O ZapCar nasceu de um desafio proposto pela DIO.me, onde tive a oportunidade de explorar conceitos fundamentais do desenvolvimento mobile. A ideia era criar uma plataforma que facilitasse a locação de veículos elétricos, proporcionando uma experiência intuitiva e moderna para os usuários. Durante o desenvolvimento, me aprofundei no uso de Kotlin, aprimorando habilidades como consumo de APIs, manipulação de listas e gerenciamento de estado. Esse projeto foi um divisor de águas na minha jornada, pois consolidou meu entendimento sobre o ecossistema Android e me preparou para desafios ainda maiores.";
-          tituloMrc81Bank.innerText = "Mrc81 Bank";
-          textoMrc81Bank.innerText =
-            "O Mrc81 Bank surgiu da minha curiosidade em entender como funcionam os sistemas bancários e de pagamentos online. Inspirado no funcionamento de grandes instituições financeiras, decidi criar um simulador bancário que permitisse aos usuários realizar operações como depósitos, saques e transferências via Pix. Desenvolver esse sistema me fez mergulhar em conceitos como autenticação segura, estruturação de banco de dados e boas práticas de código. Cada funcionalidade implementada foi um aprendizado valioso, tornando este projeto um dos pilares do meu portfólio.";
-          tituloApi.innerText = "API My-Api";
-          textoApi.innerText =
-            "Sempre tive interesse em entender melhor como os sistemas se comunicam, e foi assim que nasceu a ideia de criar minha própria API bancária. Desenvolvi a My-Api para gerenciar contas bancárias, oferecendo funcionalidades como registro de usuários, operações de crédito e débito, além de autenticação JWT. Utilizando Node.js e Express, pude explorar o desenvolvimento de endpoints RESTful e a importância da segurança no backend. Esse projeto me permitiu aprofundar no mundo das APIs, solidificando conceitos que hoje aplico em projetos mais complexos.";
-          tituloInfinityBank.innerText = "Infinity Bank";
-          textoInfinityBank.innerText =
-            "O Infinity Bank foi mais do que um projeto, foi um verdadeiro desafio pessoal. Minha intenção era criar um banco digital funcional, proporcionando uma experiência de usuário fluida e segura. Utilizando HTML, CSS e JavaScript, desenvolvi uma interface interativa e moderna, com funcionalidades como consulta de saldo, pagamentos, transferências e extrato bancário. Durante o desenvolvimento, aprendi sobre estruturação de interfaces responsivas e implementação de interações dinâmicas. Esse projeto foi um marco na minha evolução como desenvolvedor, demonstrando minha capacidade de criar aplicações completas e bem estruturadas.";
-          botoesProjeto[0].innerText = "🔗 Ver Repositório";
-          botoesProjeto[1].innerText = "🔗 Ver Repositório";
-          botoesProjeto[2].innerText = "🔗 Ver Repositório";
-          botoesProjeto[3].innerText = "🔗 Ver Repositório";
-          linkSobre.innerText = "Sobre mim";
-          linkProjetos.innerText = "Projetos";
-          linkContato.innerText = "Contato";
-        }
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const savedLanguage =
-          localStorage.getItem("selectedLanguage") || "pt-br";
-        atualizarTextosProjetos(savedLanguage);
-      });
-
-      window.mudarIdioma = function (event) {
-        if (event) event.preventDefault();
-        const newLanguage =
-          document.documentElement.lang === "pt-br" ? "en" : "pt-br";
-        localStorage.setItem("selectedLanguage", newLanguage);
-        document.documentElement.lang = newLanguage;
-        atualizarTextosProjetos(newLanguage);
-      };
-    </script>
   </body>
 </html>

@@ -1,0 +1,41 @@
+#titulo-sobre {
+  color: #1cff7a; /* Define a cor */
+  text-align: center; /* Centraliza horizontalmente */
+  margin-top: 3px; /* Adiciona espaçamento superior */
+  margin-bottom: 35px; /* Adiciona espaçamento inferior */
+  font-size: 2.9rem; /* Ajusta o tamanho da fonte */
+}
+
+#sobre {
+  display: block;
+  text-align: center; /* Centraliza os elementos dentro da seção */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding não afete o tamanho total da seção */
+}
+
+#texto-sobre {
+  max-width: 1800px; /* Define uma largura máxima para o texto */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  line-height: 1.6;
+  text-align: justify; /* Justifica o texto para uma boa leitura */
+  padding: 0 20px; /* Adiciona espaçamento interno */
+}
+
+h1#titulo-sobre {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o título */
+}
+/* Estilização da imagem de fundo */
+.imagem-fundo {
+  position: absolute;
+  top: 76%;
+  right: 0;
+  margin-right: 0px;
+  transform: translateY(-50%);
+  width: 380px;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1;
+}

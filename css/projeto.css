@@ -1,0 +1,114 @@
+/* Seção de Projetos */
+section#projetos {
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+/* Título Principal */
+.titulo-principal {
+  font-size: 46px;
+  color: #00ff99;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Container para os projetos (lado a lado) */
+.projeto-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: stretch; /* Ajusta a altura dos itens para não haver sobreposição */
+}
+
+/* Estilo dos cards de projeto */
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #022907;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  color: #00ff99;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+/* Títulos dentro dos cards */
+.projeto h2 {
+  font-size: 34px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+/* Texto dentro do card */
+.projeto p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Estilo do botão com imagem */
+.projeto-botao {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+}
+
+.projeto-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.projeto-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+  section#projetos {
+    overflow-x: auto;
+  }
+
+  .projeto-container {
+    flex-direction: column; /* Organiza os cards em uma coluna */
+    align-items: center; /* Centraliza os cards */
+    gap: 20px;
+  }
+
+  .projeto {
+    width: 90%; /* Cards ocupam 90% da tela em dispositivos pequenos */
+    margin: 15px auto;
+    padding-bottom: 70px;
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+
+/* Para telas grandes (projetos lado a lado) */
+@media (min-width: 768px) {
+  .projeto-container {
+    flex-direction: row; /* Organiza os cards em uma linha */
+    justify-content: space-around;
+  }
+
+  .projeto {
+    width: 350px;
+    height: auto;
+    flex-shrink: 0;
+  }
+}

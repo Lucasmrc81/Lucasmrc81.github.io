@@ -1,0 +1,100 @@
+.foto-texto-container {
+  display: flex; /* Alinha a foto e o texto lado a lado */
+  align-items: center; /* Alinha verticalmente no centro */
+  gap: 50px; /* Espaçamento entre a foto e o texto */
+}
+
+.foto-container {
+  flex-shrink: 0; /* Impede que a foto encolha */
+}
+
+.imagem-fundo-direita {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  right: 0; /* Alinha à direita */
+  margin-right: 50px; /* Adiciona margem à direita */
+  transform: translateY(-50%); /* Ajusta para centralização */
+  width: 400px; /* Define o tamanho da imagem */
+  opacity: 0.4; /* Torna a imagem quase apagada */
+  pointer-events: none; /* Impede interação com a imagem */
+  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+.foto-perfil {
+  margin-top: 50px;
+  margin-left: 150px; /* Adiciona margem à esquerda */
+  margin-bottom: 50px; /* Adiciona margem inferior */
+  width: 300px; /* Ajusta o tamanho da foto */
+  height: 300px; /* Ajusta o tamanho da foto */
+  border-radius: 50%; /* Torna a foto redonda */
+  object-fit: cover; /* Garante que a imagem preencha o espaço */
+  box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.7);
+  border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.texto-container {
+  display: flex;
+  flex-direction: column; /* Coloca o título e subtítulo em coluna */
+  justify-content: center; /* Alinha o texto verticalmente ao centro */
+}
+
+#titulo-introducao {
+  font-size: 2rem; /* Ajusta o tamanho da fonte */
+  margin: 0; /* Remove margens extras */
+}
+
+#subtitulo-introducao {
+  font-size: 1.5rem; /* Ajusta o tamanho do subtítulo */
+  margin-top: 10px; /* Adiciona um pequeno espaçamento entre título e subtítulo */
+}
+
+#subtitulo-introducao {
+  font-size: 1.2rem;
+  margin-top: 0; /* Remove o espaçamento superior */
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#texto-introducao {
+  font-size: 1.2rem !important;
+  margin-top: 30px !important; /* Aumenta o espaçamento superior */
+  margin-bottom: 50px !important; /* Espaçamento inferior */
+  padding-bottom: 0; /* Remove qualquer espaçamento extra */
+  max-width: 1908px; /* Define uma largura máxima para o texto */
+  margin-left: 32px; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/* Ajusta espaçamento entre h1 e h2 */
+.ajusta-espacamento h1,
+.ajusta-espacamento h2 {
+  margin-bottom: 0; /* Remove completamente o espaçamento */
+}
+
+.imagens-container {
+  display: flex;
+  gap: 10px; /* Espaçamento entre as imagens */
+  margin-top: 10px; /* Espaçamento superior */
+}
+
+.imagens-container img {
+  width: 48px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+#titulo-sobre {
+  color: #1cff7a; /* Define a cor */
+  text-align: center; /* Centraliza horizontalmente */
+  margin-top: 40px; /* Adiciona espaçamento superior */
+  margin-bottom: 35px; /* Adiciona espaçamento inferior */
+  font-size: 2.9rem; /* Ajusta o tamanho da fonte */
+}
+
+#titulo-sobre-introducao {
+  font-size: 1.8rem; /* Ajusta o tamanho da fonte */
+  text-align: left; /* Alinha o título à esquerda */
+  margin-top: 30px; /* Espaçamento superior */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  margin-left: 32px; /* Adiciona margem à esquerda */
+  color: #1cff7a; /* Cor do título */
+}

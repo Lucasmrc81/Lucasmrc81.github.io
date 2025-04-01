@@ -1,0 +1,87 @@
+/* Seção Tecnologias */
+#tecnologias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Estilização dos blocos de tecnologia */
+.tecnologia-bloco {
+  background-color: #022907;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 300px;
+}
+
+.tecnologia-bloco h3 {
+  color: #00ff99;
+  font-size: 1.6em;
+  margin-bottom: 30px;
+  text-align: left;
+  width: 100%;
+}
+
+.tecnologia-bloco ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.tecnologia-bloco ul li {
+  font-size: 1.6em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.tecnologia-bloco ul li img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #tecnologias {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilização do título */
+#titulo-principal {
+  font-size: 3rem;
+  color: #1cff7a;
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Estilização da imagem de fundo */
+.imagem-fundo {
+  position: absolute;
+  top: 76%;
+  right: 0;
+  margin-right: 0px;
+  transform: translateY(-50%);
+  width: 380px;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1;
+}

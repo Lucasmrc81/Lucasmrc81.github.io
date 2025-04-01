@@ -3,239 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfólio de Lucas Mrc - Engenheiro de Software e Desenvolvedor Full Stack. Conheça meus projetos e experiências."
+    />
     <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html" class="logo">Mrc.Dev</a>
+      <nav aria-label="Navegação principal">
+        <div class="logo-container">
+          <h1 class="logo"><a href="index.html">Lucas Mrc</a></h1>
+          <h2 class="logo2">Dev</h2>
+        </div>
         <ul class="nav-links">
-          <li><a href="sobre.html" id="link-sobre">Sobre mim</a></li>
-          <li><a href="projetos.html" id="link-projetos">Projetos</a></li>
-          <li><a href="#contato" id="link-contato">Contato</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="experiencia.html">Experiência</a></li>
+          <li><a href="tecnologia.html">Tecnologia</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
-        <a href="#" class="idioma" onclick="mudarIdioma()">
-          <img src="imagem/language.png" alt="Idioma" />
-        </a>
-        <a href="#" class="darck" onclick="mudarTema()">
-          <img src="imagem/dark.png" alt="Tema escuro" />
-        </a>
       </nav>
     </header>
 
     <section id="introducao">
-      <h1 id="titulo-introducao">Sobre mim 🚀</h1>
-      <img src="imagem/perfil.jpg" alt="Lucas Marcio" class="foto-perfil" />
-      <p id="texto-introducao">
-        Olá! Sou Lucas Marcio (ou apenas Mrc.Dev), profissional em formação na
-        área de Engenharia de Software, apaixonado por tecnologia e inovação.
-        Minha jornada na tecnologia começou com desenvolvimento de aplicativos
-        móveis, mas rapidamente expandi meu interesse para arquitetura de
-        software, engenharia de sistemas e computação em nuvem. Sempre busco
-        criar soluções eficientes, escaláveis ​​e de alta performance,
-        utilizando as melhores práticas e tecnologias disponíveis. Atualmente,
-        estou aprimorando minhas habilidades em design de sistemas, DevOps e
-        desenvolvimento backend, aprofundando meus conhecimentos para construir
-        aplicações robustas e confiáveis. Tenho experiência com Kotlin, Java e
-        tecnologias backend, além de trabalhar com integração de APIs,
-        otimização de performance e engenharia de software. Acredito que a
-        tecnologia pode transformar negócios e impactar positivamente a vida das
-        pessoas. Meu objetivo é continuar aprendendo e contribuindo para
-        projetos que façam a diferença.
-      </p>
-    </section>
+      <div class="container-introducao">
+        <!-- Seção da foto e texto lado a lado -->
+        <div class="foto-texto-container">
+          <!-- Seção da foto -->
+          <div class="foto-container">
+            <img
+              src="imagem/perfil.png"
+              alt="Lucas Marcio"
+              class="foto-perfil"
+            />
+          </div>
 
-    <section id="projetos">
-      <h2 id="titulo-projetos">Meus Projetos</h2>
-      <p id="texto-projetos">
-        Confira alguns dos projetos que desenvolvi.<br />
-      </p>
-      <button
-        class="botao-projeto"
-        onclick="window.open('https://github.com/Lucasmrc81/ZapCar', '_blank')"
-      >
-        🔗 Ver Projeto ZapCar
-      </button>
-      <button
-        class="botao-projeto"
-        onclick="window.open('https://github.com/Lucasmrc81/Banco-do-Lucas', '_blank')"
-      >
-        🔗 Ver Projeto Mrc81 Bank
-      </button>
-      <button
-        class="botao-projeto"
-        onclick="window.open('https://github.com/Lucasmrc81/Api')"
-      >
-        🔗 Ver Projeto de API
-      </button>
-      <button
-        class="botao-projeto"
-        onclick="window.open('https://github.com/Lucasmrc81/infinity-bank')"
-      >
-        🔗 Ver Projeto infinity-bank
-      </button>
-    </section>
+          <!-- Seção dos títulos e imagens -->
+          <div class="texto-container">
+            <h1 id="titulo-introducao">Olá, eu sou Lucas Marcio</h1>
+            <h2 id="subtitulo-introducao">Engenheiro de Software</h2>
 
-    <section id="contato">
-      <h2 id="titulo-contato">Contato</h2>
-      <p id="texto-contato">
-        Entre em contato comigo através das redes sociais ou e-mail.
-      </p>
-      <div align="center">
-        <a href="https://www.linkedin.com/in/lucas-mrc-dev/" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg"
-            width="52"
-            height="40"
-            alt="linkedin logo"
-          />
-        </a>
-        <a href="https://discord.com/channels/@lucasmrc81/" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg"
-            width="52"
-            height="40"
-            alt="discord logo"
-          />
-        </a>
-        <a href="http://wa.me/5511940746586" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/whatsapp/default.svg"
-            width="52"
-            height="40"
-            alt="whatsapp logo"
-          />
-        </a>
-        <a href="mailto:lucasmrc81@gmail.com" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg"
-            width="52"
-            height="40"
-            alt="gmail logo"
-          />
-        </a>
-        <a href="https://www.instagram.com/lucasmrc81/" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg"
-            width="52"
-            height="40"
-            alt="instagram logo"
-          />
-        </a>
+            <div class="imagens-container">
+              <img src="imagem/java.png" alt="Logo Java" class="imagem-java" />
+              <img
+                src="imagem/JavaScript.png"
+                alt="Logo JavaScript"
+                class="imagem-javascript"
+              />
+              <img
+                src="imagem/Kotlin.png"
+                alt="Logo Kotlin"
+                class="imagem-kotlin"
+              />
+              <img src="imagem/js.png" alt="Logo JS" class="imagem-js" />
+              <img src="imagem/git.png" alt="Logo Git" class="imagem-git" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Título "Sobre" -->
+        <h3 id="titulo-sobre-introducao">Quem sou Eu</h3>
+
+        <!-- Texto de introdução -->
+        <p id="texto-introducao">
+          Sou um engenheiro de software em formação e desenvolvedor full stack,
+          com uma paixão profunda por tecnologia, inovação e automação de
+          sistemas. Ao longo da minha jornada, busco constantemente evoluir
+          minhas habilidades para criar soluções tecnológicas robustas,
+          eficientes e escaláveis. Tenho como objetivo transformar ideias em
+          soluções impactantes e acessíveis, capazes de atender a necessidades
+          reais, simplificar processos e melhorar a experiência do usuário. Meu
+          compromisso é impulsionar a inovação e contribuir para o avanço
+          tecnológico por meio da criação de sistemas que proporcionem valor e
+          resultados concretos.
+        </p>
       </div>
-    </section>
 
-    <div id="curriculo-section">
-      <h3 id="titulo-curriculo">Currículo</h3>
-      <p id="texto-curriculo">
-        Se você deseja saber mais sobre minha experiência e habilidades, pode
-        baixar meu currículo completo clicando no botão abaixo.
-      </p>
-      <a href="Currículo.pdf" class="botao-curriculo" target="_blank"
-        >📄 Baixar Currículo</a
-      >
-    </div>
+      <!-- Imagem de fundo quase apagada -->
+      <img
+        src="imagem/imagen.png"
+        alt="Tecnologia"
+        class="imagem-fundo-direita"
+      />
+    </section>
 
     <footer>
       <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
-      <p id="visit-count"></p>
     </footer>
-
-    <script src="scripts/idioma.js"></script>
-    <script src="scripts/tema.js"></script>
-    <script>
-      function atualizarTextosIntroducao(language) {
-        const tituloIntroducao = document.getElementById("titulo-introducao");
-        const textoIntroducao = document.getElementById("texto-introducao");
-        const botoesProjeto = document.querySelectorAll(".botao-projeto");
-        const linkSobre = document.getElementById("link-sobre");
-        const linkProjetos = document.getElementById("link-projetos");
-        const linkContato = document.getElementById("link-contato");
-        const tituloProjetos = document.getElementById("titulo-projetos");
-        const textoProjetos = document.getElementById("texto-projetos");
-        const tituloContato = document.getElementById("titulo-contato");
-        const textoContato = document.getElementById("texto-contato");
-        const botaoCurriculo = document.querySelector(".botao-curriculo");
-        const textoCurriculo = document.getElementById("texto-curriculo");
-        const tituloCurriculo = document.getElementById("titulo-curriculo");
-
-        if (language === "en") {
-          tituloIntroducao.innerText =
-            "My journey in the world of development! 💻✨";
-          textoIntroducao.innerText =
-            "Hello! I'm Lucas Marcio (or just Mrc.Dev), a professional in training in the field of Software Engineering, passionate about technology and innovation. My journey in technology began with mobile app development, but I quickly expanded my interest to software architecture, systems engineering, and cloud computing. I always strive to create efficient, scalable, and high-performance solutions using the best practices and technologies available. Currently, I am improving my skills in system design, DevOps, and backend development, deepening my knowledge to build robust and reliable applications. I have experience with Kotlin, Java, and backend technologies, as well as working with API integration, performance optimization, and software engineering. I believe that technology can transform businesses and positively impact people's lives. My goal is to keep learning and contributing to projects that make a difference.";
-          botoesProjeto[0].innerText = "🔗 View ZapCar Project";
-          botoesProjeto[1].innerText = "🔗 View Mrc81 Bank Project";
-          botoesProjeto[2].innerText = "🔗 View API Project";
-          botoesProjeto[3].innerText = "🔗 View infinity-bank Project";
-          linkSobre.innerText = "About me";
-          linkProjetos.innerText = "Projects";
-          linkContato.innerText = "Contact";
-          tituloProjetos.innerText = "My Projects";
-          textoProjetos.innerText =
-            "Check out some of the projects I have developed.";
-          tituloContato.innerText = "Contact";
-          textoContato.innerText = "Contact me through social media or email.";
-          botaoCurriculo.innerText = "📄 Download Resume";
-          textoCurriculo.innerText =
-            "If you want to know more about my experience and skills, you can download my full resume by clicking the button below.";
-          tituloCurriculo.innerText = "Resume";
-        } else {
-          tituloIntroducao.innerText =
-            "Minha jornada no mundo do desenvolvimento! 💻✨";
-          textoIntroducao.innerText =
-            "Olá! Sou Lucas Marcio (ou apenas Mrc.Dev), profissional em formação na área de Engenharia de Software, apaixonado por tecnologia e inovação. Minha jornada na tecnologia começou com desenvolvimento de aplicativos móveis, mas rapidamente expandi meu interesse para arquitetura de software, engenharia de sistemas e computação em nuvem. Sempre busco criar soluções eficientes, escaláveis ​​e de alta performance, utilizando as melhores práticas e tecnologias disponíveis. Atualmente, estou aprimorando minhas habilidades em design de sistemas, DevOps e desenvolvimento backend, aprofundando meus conhecimentos para construir aplicações robustas e confiáveis. Tenho experiência com Kotlin, Java e tecnologias backend, além de trabalhar com integração de APIs, otimização de performance e engenharia de software. Acredito que a tecnologia pode transformar negócios e impactar positivamente a vida das pessoas. Meu objetivo é continuar aprendendo e contribuindo para projetos que façam a diferença.";
-          botoesProjeto[0].innerText = "🔗 Ver Projeto ZapCar";
-          botoesProjeto[1].innerText = "🔗 Ver Projeto Mrc81 Bank";
-          botoesProjeto[2].innerText = "🔗 Ver Projeto de API";
-          botoesProjeto[3].innerText = "🔗 Ver Projeto infinity-bank";
-          linkSobre.innerText = "Sobre mim";
-          linkProjetos.innerText = "Projetos";
-          linkContato.innerText = "Contato";
-          tituloProjetos.innerText = "Meus Projetos";
-          textoProjetos.innerText =
-            "Confira alguns dos projetos que desenvolvi.";
-          tituloContato.innerText = "Contato";
-          textoContato.innerText =
-            "Entre em contato comigo através das redes sociais ou e-mail.";
-          botaoCurriculo.innerText = "📄 Baixar Currículo";
-          textoCurriculo.innerText =
-            "Se você deseja saber mais sobre minha experiência e habilidades, pode baixar meu currículo completo clicando no botão abaixo.";
-          tituloCurriculo.innerText = "Currículo";
-        }
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const savedLanguage =
-          localStorage.getItem("selectedLanguage") || "pt-br";
-        atualizarTextosIntroducao(savedLanguage);
-        updateVisitCount();
-      });
-
-      window.mudarIdioma = function (event) {
-        if (event) event.preventDefault();
-        const newLanguage =
-          document.documentElement.lang === "pt-br" ? "en" : "pt-br";
-        localStorage.setItem("selectedLanguage", newLanguage);
-        document.documentElement.lang = newLanguage;
-        atualizarTextosIntroducao(newLanguage);
-      };
-
-      // Função para obter e incrementar a contagem de visitas
-      async function updateVisitCount() {
-        const response = await fetch("/api/increment-visit", {
-          method: "POST",
-        });
-        const data = await response.json();
-        console.log(`Visitas: ${data.count}`);
-        document.getElementById(
-          "visit-count"
-        ).innerText = `Visitas: ${data.count}`;
-      }
-
-      // Chamar a função ao carregar a página
-      document.addEventListener("DOMContentLoaded", updateVisitCount);
-    </script>
   </body>
 </html>
