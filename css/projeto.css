@@ -95,6 +95,33 @@ section#projetos {
   }
 }
 
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .projeto-container {
+    flex-direction: column; /* Empilha os cards */
+    gap: 15px; /* Reduz o espaçamento entre os cards */
+  }
+
+  .projeto {
+    width: 90%; /* Faz os cards ocuparem quase toda a largura */
+    margin: 0 auto; /* Centraliza os cards */
+    padding: 15px; /* Reduz o espaçamento interno */
+  }
+
+  .projeto h2 {
+    font-size: 24px; /* Reduz o tamanho do título */
+  }
+
+  .projeto p {
+    font-size: 14px; /* Reduz o tamanho do texto */
+  }
+
+  .projeto-btn img {
+    width: 24px; /* Reduz o tamanho do botão */
+    height: 24px;
+  }
+}
+
 /* Para telas grandes (projetos lado a lado) */
 @media (min-width: 768px) {
   .projeto-container {

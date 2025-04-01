@@ -65,6 +65,32 @@
   }
 }
 
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  #tecnologias {
+    grid-template-columns: 1fr; /* Exibe os blocos em uma única coluna */
+    gap: 15px; /* Reduz o espaçamento entre os blocos */
+  }
+
+  .tecnologia-bloco {
+    padding: 20px; /* Reduz o espaçamento interno */
+    min-height: auto; /* Remove a altura mínima */
+  }
+
+  .tecnologia-bloco h3 {
+    font-size: 1.4em; /* Reduz o tamanho do título */
+  }
+
+  .tecnologia-bloco ul li {
+    font-size: 1.2em; /* Reduz o tamanho do texto */
+    gap: 10px; /* Reduz o espaçamento entre os itens */
+  }
+
+  .tecnologia-bloco ul li img {
+    width: 24px; /* Reduz o tamanho das imagens */
+  }
+}
+
 /* Estilização do título */
 #titulo-principal {
   font-size: 3rem;

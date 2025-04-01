@@ -159,3 +159,43 @@
   font-weight: bold; /* Engrossa a fonte */
   cursor: not-allowed; /* Cursor indicando que o botão está desativado */
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  #formacao-profissional {
+    position: static; /* Remove a posição absoluta */
+    width: 100%; /* Faz o conteúdo ocupar toda a largura */
+    padding: 10px; /* Adiciona espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .card {
+    width: 90%; /* Faz os cards ocuparem quase toda a largura */
+    margin: 20px auto; /* Centraliza os cards */
+    padding: 15px; /* Reduz o espaçamento interno */
+  }
+
+  .curso-nome {
+    font-size: 1.2rem; /* Reduz o tamanho do texto */
+  }
+
+  .faculdade-nome {
+    font-size: 0.9rem; /* Reduz o tamanho do texto */
+  }
+
+  .curso-descricao {
+    font-size: 0.9rem; /* Reduz o tamanho do texto */
+  }
+
+  #titulo-experiencia,
+  #subtitulo-experiencia {
+    font-size: 1.5rem; /* Reduz o tamanho dos títulos */
+    margin-left: 0; /* Remove a margem à esquerda */
+    text-align: center; /* Centraliza os títulos */
+  }
+
+  .imagem-experiencia {
+    width: 200px; /* Reduz o tamanho da imagem */
+    margin: 20px auto; /* Centraliza a imagem */
+  }
+}

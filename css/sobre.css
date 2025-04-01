@@ -39,3 +39,26 @@ h1#titulo-sobre {
   pointer-events: none;
   z-index: -1;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  #sobre {
+    padding: 10px; /* Reduz o espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  #titulo-sobre {
+    font-size: 2rem; /* Reduz o tamanho do título */
+    margin-top: 10px; /* Ajusta o espaçamento superior */
+  }
+
+  #texto-sobre {
+    font-size: 1rem; /* Reduz o tamanho do texto */
+    padding: 0 10px; /* Adiciona espaçamento interno */
+  }
+
+  .imagem-fundo {
+    width: 200px; /* Reduz o tamanho da imagem */
+    opacity: 0.3; /* Ajusta a opacidade */
+  }
+}

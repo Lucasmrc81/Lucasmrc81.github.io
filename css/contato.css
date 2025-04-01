@@ -87,3 +87,44 @@
   pointer-events: none;
   z-index: -1;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  #contato {
+    flex-direction: column; /* Empilha o texto e a imagem */
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Reduz o espaçamento interno */
+  }
+
+  #contato .contato-info {
+    margin-right: 0; /* Remove a margem lateral */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+  }
+
+  #titulo-contato {
+    font-size: 2rem; /* Reduz o tamanho do título */
+  }
+
+  #texto-contato {
+    font-size: 1rem; /* Reduz o tamanho do texto */
+  }
+
+  #contato img {
+    width: 200px; /* Reduz o tamanho da imagem */
+  }
+
+  .redes-sociais {
+    gap: 10px; /* Reduz o espaçamento entre os botões */
+  }
+
+  .social-botao {
+    width: 40px; /* Reduz o tamanho dos botões */
+    height: 40px;
+  }
+
+  .social-botao img {
+    width: 36px; /* Ajusta o tamanho das imagens */
+    height: 36px;
+  }
+}

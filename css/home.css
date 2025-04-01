@@ -98,3 +98,44 @@
   margin-left: 32px; /* Adiciona margem à esquerda */
   color: #1cff7a; /* Cor do título */
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .foto-texto-container {
+    flex-direction: column; /* Empilha a foto e o texto */
+    align-items: center;
+    gap: 20px; /* Reduz o espaçamento */
+  }
+
+  .foto-perfil {
+    width: 200px; /* Reduz o tamanho da foto */
+    height: 200px;
+    margin: 0; /* Remove margens extras */
+  }
+
+  .texto-container {
+    text-align: center; /* Centraliza o texto */
+  }
+
+  #titulo-introducao {
+    font-size: 1.8rem; /* Reduz o tamanho do título */
+  }
+
+  #subtitulo-introducao {
+    font-size: 1.2rem; /* Reduz o tamanho do subtítulo */
+  }
+
+  #texto-introducao {
+    font-size: 1rem; /* Reduz o tamanho do texto */
+    padding: 0 10px; /* Adiciona espaçamento interno */
+  }
+
+  .imagens-container {
+    justify-content: center; /* Centraliza as imagens */
+    gap: 5px; /* Reduz o espaçamento entre as imagens */
+  }
+
+  .imagens-container img {
+    width: 32px; /* Reduz o tamanho das imagens */
+  }
+}

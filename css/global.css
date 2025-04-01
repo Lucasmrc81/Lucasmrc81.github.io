@@ -179,6 +179,29 @@ nav {
     flex-direction: column;
     padding: 10px;
   }
+
+  header {
+    flex-direction: column; /* Empilha os elementos do cabeçalho */
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo-container {
+    align-items: center; /* Centraliza o logo */
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Empilha os itens do menu */
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os itens */
+    margin-right: 0;
+  }
+
+  .nav-links a {
+    font-size: 20px; /* Reduz o tamanho da fonte */
+    padding: 8px 12px; /* Ajusta o espaçamento interno */
+  }
 }
 
 /* Adaptação para telas de smartphones (máximo de 480px de largura) */
