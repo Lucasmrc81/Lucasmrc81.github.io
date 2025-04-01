@@ -2,7 +2,7 @@
 section#projetos {
   padding: 40px 20px;
   text-align: center;
-  width: 100%;
+  width: 100%; /* Ocupa toda a largura da tela */
   margin-bottom: 60px;
 }
 
@@ -10,50 +10,49 @@ section#projetos {
 .titulo-principal {
   font-size: 46px;
   color: #00ff99;
-  margin-top: 40px;
+  margin-top: 40px; /* Distância do topo */
   margin-bottom: 40px;
-  text-align: center;
+  text-align: center; /* Centraliza o texto */
 }
 
 /* Container para os projetos (lado a lado) */
 .projeto-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: flex; /* Exibe os cards lado a lado */
+  flex-wrap: wrap; /* Permite que os projetos se ajustem ao tamanho da tela */
+  justify-content: center; /* Centraliza os projetos horizontalmente */
+  gap: 20px; /* Espaço entre os cards */
   margin-top: 20px;
-  align-items: stretch; /* Ajusta a altura dos itens para não haver sobreposição */
 }
 
 /* Estilo dos cards de projeto */
 .projeto {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Exibe o conteúdo do card na vertical */
+  align-items: center; /* Centraliza os itens dentro do card */
   background: #022907;
   border-radius: 10px;
   padding: 20px;
-  width: 350px;
-  color: #00ff99;
+  width: 350px; /* Largura maior para o card */
+  color: #00ff99; /* Cor do texto */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex-shrink: 0;
-  height: auto;
-  box-sizing: border-box;
-  position: relative;
-  padding-bottom: 70px;
+  flex-shrink: 0; /* Impede que os cards encolham */
+  height: auto; /* Altura ajustada conforme o conteúdo */
+  box-sizing: border-box; /* Para incluir o padding na largura */
+  position: relative; /* Necessário para o posicionamento absoluto do botão */
+  padding-bottom: 70px; /* Distância para garantir que o botão não sobreponha o texto */
 }
 
 /* Títulos dentro dos cards */
 .projeto h2 {
-  font-size: 34px;
-  margin-top: 20px;
+  font-size: 4px;
+  margin-top: 20px; /* Afastamento do título do conteúdo */
   margin-bottom: 45px;
 }
 
 /* Texto dentro do card */
 .projeto p {
   font-size: 16px;
-  color: #fff;
+  color: #fff; /* Cor do texto */
   line-height: 1.5;
   text-align: justify;
   margin-bottom: 20px;
@@ -61,10 +60,10 @@ section#projetos {
 
 /* Estilo do botão com imagem */
 .projeto-botao {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
+  position: absolute; /* Posiciona o botão fora do fluxo normal */
+  bottom: 20px; /* Distância da parte inferior do card */
+  left: 20px; /* Distância da parte esquerda do card */
+  margin: 0; /* Remove a margem extra */
 }
 
 .projeto-btn {
@@ -81,34 +80,42 @@ section#projetos {
 /* Ajuste para telas pequenas */
 @media (max-width: 768px) {
   section#projetos {
-    overflow-x: auto;
+    overflow-x: auto; /* Permite rolagem horizontal */
   }
 
   .projeto-container {
-    flex-direction: column; /* Organiza os cards em uma coluna */
-    align-items: center; /* Centraliza os cards */
-    gap: 20px;
+    width: auto; /* Ajusta o container ao tamanho dos cards */
   }
 
   .projeto {
     width: 90%; /* Cards ocupam 90% da tela em dispositivos pequenos */
+    height: auto; /* Altura ajustada */
     margin: 15px auto;
-    padding-bottom: 70px;
-    height: auto;
-    flex-shrink: 0;
+    padding-bottom: 70px; /* Distância para evitar sobreposição do botão */
   }
 }
 
 /* Para telas grandes (projetos lado a lado) */
 @media (min-width: 768px) {
   .projeto-container {
-    flex-direction: row; /* Organiza os cards em uma linha */
-    justify-content: space-around;
+    display: flex; /* Lado a lado */
+    flex-wrap: wrap; /* Ajusta os projetos ao tamanho da tela */
+    justify-content: center; /* Centraliza os projetos */
   }
 
   .projeto {
-    width: 350px;
-    height: auto;
-    flex-shrink: 0;
+    flex-shrink: 0; /* Impede o encolhimento dos cards */
   }
+}
+/* Estilização da imagem de fundo */
+.imagem-fundo {
+  position: absolute;
+  top: 116%;
+  right: 0;
+  margin-right: 0px;
+  transform: translateY(-50%);
+  width: 380px;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1;
 }
