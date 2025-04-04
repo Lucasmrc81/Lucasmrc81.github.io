@@ -1,7 +1,8 @@
 #formacao-profissional {
-  position: absolute;
-  top: 220px;
-  right: 200px;
+  position: relative;
+  margin-top: -1150px;
+  margin-left: auto;
+  margin-right: 50px;
   width: 720px;
   color: #fff;
   background-color: transparent;
@@ -9,29 +10,27 @@
 }
 
 .imagem-experiencia {
-  position: absolute;
-  top: 120%; /* Move a imagem mais para baixo */
-  right: 0; /* Alinha à direita */
-  margin-right: 10px; /* Remove margem à direita */
-  transform: translateY(-50%); /* Ajusta para centralização */
-  width: 380px; /* Define o tamanho da imagem */
-  opacity: 0.4; /* Torna a imagem quase apagada */
-  pointer-events: none; /* Impede interação com a imagem */
-  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+  position: relative;
+  bottom: -90px;
+  right: -400px;
+  width: 380px;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1;
 }
 
 #titulo-formacao {
   font-size: 1.5rem;
   color: #fff;
-  margin-top: 50px; /* Espaçamento superior */
-  margin-bottom: 50px; /* Espaçamento inferior */
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #titulo-formacao::before {
-  content: "+"; /* Adiciona o "+" antes do texto */
-  font-size: 1.8rem; /* Tamanho do "+" */
-  color: #1cff7a; /* Cor verde */
-  margin-right: 5px; /* Espaçamento entre o "+" e o texto */
+  content: "+";
+  font-size: 1.8rem;
+  color: #1cff7a;
+  margin-right: 5px;
 }
 
 .formacao-titulo {
@@ -51,156 +50,249 @@
 }
 
 #formacao-profissional .formacao-header {
-  margin-bottom: 70px; /* Adiciona espaçamento inferior entre os blocos */
+  margin-bottom: 70px;
 }
 
 #linha-vertical {
-  position: absolute; /* Define a posição como absoluta */
-  top: 30%; /* Move o início da linha para 20% da altura do container */
-  bottom: 0%; /* Define o final da linha a 10% antes do final do container */
-  left: 50%; /* Centraliza a linha no meio da tela */
-  transform: translateX(
-    -50%
-  ); /* Garante que a linha fique exatamente no centro */
-  width: 2px; /* Mantém a largura da linha */
-  background-color: #1cff7a; /* Cor da linha */
-  z-index: 1; /* Garante que a linha fique acima do fundo */
+  position: absolute;
+  top: 8%;
+  bottom: 0%;
+  left: -20%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 550px;
+  background-color: #1cff7a;
+  z-index: 1;
 }
 
 #titulo-sobre-introducao {
-  font-size: 1.8rem; /* Ajusta o tamanho da fonte */
-  text-align: left; /* Alinha o título à esquerda */
-  margin-top: 30px; /* Espaçamento superior */
-  margin-bottom: 20px; /* Espaçamento inferior */
-  margin-left: 32px; /* Adiciona margem à esquerda */
-  color: #1cff7a; /* Cor do título */
+  font-size: 1.8rem;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 32px;
+  color: #1cff7a;
 }
 
 #titulo-experiencia {
   color: #1cff7a;
-  font-size: 2.1rem; /* Tamanho da fonte do título */
-  text-align: left; /* Alinha o título à esquerda */
-  margin-left: 72px; /* Espaçamento à esquerda */
-  margin-top: 30px; /* Espaçamento superior */
+  font-size: 2.1rem;
+  text-align: left;
+  margin-left: 72px;
+  margin-top: 30px;
 }
 
 #subtitulo-experiencia {
-  font-size: 1.5rem; /* Mesmo tamanho do título */
-  text-align: left; /* Alinha o subtítulo à esquerda */
-  color: #ffffff; /* Define a cor branca para o texto */
-  margin-top: 10px; /* Reduz o espaçamento superior */
-  margin-left: 72px; /* Espaçamento à esquerda */
-  margin-bottom: 40px; /* Espaçamento inferior */
+  font-size: 1.5rem;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-left: 72px;
+  margin-bottom: 40px;
 }
 
 #subtitulo-experiencia::before {
-  content: "+"; /* Adiciona o "+" antes do texto */
-  font-size: 1.5rem; /* Mesmo tamanho do subtítulo */
-  color: #1cff7a !important; /* Garante que o "+" fique verde */
-  margin-right: 5px; /* Adiciona espaço entre o "+" e o texto */
+  content: "+";
+  font-size: 1.5rem;
+  color: #1cff7a !important;
+  margin-right: 5px;
 }
 
 #subtitulo-experiencia + * {
-  margin-top: 20px; /* Garante espaçamento no próximo elemento */
+  margin-top: 20px;
 }
 
 .card {
-  background-color: #022907; /* Cor de fundo do card */
-  border-radius: 10px; /* Bordas arredondadas */
-  width: 720px; /* Largura fixa */
-  height: 280px; /* Altura fixa */
-  color: #ffffff; /* Cor do texto */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
-  position: relative; /* Permite posicionamento de elementos adicionais */
-  left: 52px; /* Move o card mais para a esquerda */
-  display: flex; /* Para centralizar o conteúdo */
-  flex-direction: column; /* Alinha o conteúdo verticalmente */
-  align-items: flex-start; /* Alinha o conteúdo à esquerda */
-  justify-content: flex-start; /* Garante que o conteúdo seja alinhado ao topo */
-  padding: 20px; /* Adiciona espaçamento interno */
-  text-align: left; /* Alinha o texto à esquerda */
-  margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+  background-color: #022907;
+  border-radius: 10px;
+  width: 720px;
+  height: 280px;
+  color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .curso-nome {
-  font-size: 1.5rem; /* Tamanho da fonte do nome do curso */
-  margin-right: 10px; /* Espaço à direita do nome do curso */
+  font-size: 1.5rem;
+  margin-right: 10px;
 }
 
 .faculdade-nome {
-  font-size: 1rem; /* Tamanho da fonte do nome da faculdade reduzido */
-  margin-bottom: 10px; /* Espaçamento inferior */
-  color: #1cff7a; /* Cor levemente mais clara */
-  margin-top: 10px; /* Adiciona um pequeno espaçamento acima */
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #1cff7a;
+  margin-top: 10px;
 }
 
 .curso-descricao {
-  font-size: 1rem; /* Tamanho da fonte da descrição */
-  margin-bottom: 0; /* Remove espaçamento inferior */
-  color: rgba(255, 255, 255, 0.7); /* Cor mais clara */
-  margin-top: 10px; /* Adiciona espaçamento superior para a descrição */
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
 }
 
-/* Flexbox para a estrutura do cabeçalho do curso */
 .curso-header {
-  display: flex; /* Usamos flexbox para alinhar o nome do curso e o botão na horizontal */
-  justify-content: space-between; /* Alinha o nome do curso à esquerda e o botão à direita */
-  align-items: center; /* Garante que ambos fiquem alinhados verticalmente */
-  width: 100%; /* O cabeçalho ocupa toda a largura disponível */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .status-botao {
-  background-color: #1cff7a; /* Cor de fundo do botão */
-  color: #022907; /* Cor do texto do botão */
-  border: none; /* Remove bordas */
-  border-radius: 10px; /* Bordas arredondadas */
-  padding: 5px 10px; /* Espaçamento interno */
-  font-size: 0.9rem; /* Tamanho da fonte */
-  font-weight: bold; /* Engrossa a fonte */
-  cursor: not-allowed; /* Cursor indicando que o botão está desativado */
+  background-color: #1cff7a;
+  color: #022907;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: not-allowed;
 }
 
-/* Responsividade para telas menores */
+footer {
+  margin-top: 110px;
+  position: relative;
+  padding: 10px 0;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   #formacao-profissional {
-    position: static; /* Remove a posição absoluta */
-    width: 100%; /* Faz o conteúdo ocupar toda a largura */
-    padding: 10px; /* Adiciona espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    position: static;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: -40px;
   }
 
   .card {
-    width: 90%; /* Faz os cards ocuparem quase toda a largura */
-    margin: 20px auto; /* Centraliza os cards */
-    padding: 15px; /* Reduz o espaçamento interno */
-    height: auto; /* Ajusta a altura automaticamente */
+    width: 90%;
+    margin: 10px 0 0px -16%;
+    padding: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .curso-nome {
-    font-size: 1.2rem; /* Reduz o tamanho do texto */
+    font-size: 1.2rem;
   }
 
   .faculdade-nome {
-    font-size: 0.9rem; /* Reduz o tamanho do texto */
+    font-size: 0.9rem;
   }
 
   .curso-descricao {
-    font-size: 0.9rem; /* Reduz o tamanho do texto */
+    font-size: 0.9rem;
   }
 
   #titulo-experiencia,
   #subtitulo-experiencia {
-    font-size: 1.5rem; /* Reduz o tamanho dos títulos */
-    margin-left: 0; /* Remove a margem à esquerda */
-    text-align: center; /* Centraliza os títulos */
+    font-size: 1.5rem;
+    margin-left: 12px;
+    text-align: left;
   }
 
   .imagem-experiencia {
-    width: 200px; /* Reduz o tamanho da imagem */
-    margin: 20px auto; /* Centraliza a imagem */
+    width: 200px;
+    margin: 20px auto;
+    margin-bottom: 0;
   }
 
   #linha-vertical {
-    display: none; /* Remove a linha vertical em telas pequenas */
+    display: none;
+  }
+
+  #experiencia {
+    padding-left: 5%;
+    flex: 1;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+
+  .imagem-experiencia {
+    display: none;
+  }
+
+  .formacao-detalhes {
+    text-align: center;
+    margin: 0;
+    width: 90%;
+    word-wrap: break-word;
+    padding-left: 10px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  #experiencia {
+    flex-grow: 1;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  footer {
+    position: relative;
+    margin-top: -30px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  #titulo-formacao {
+    text-align: left;
+    margin-left: 20px;
+    position: relative;
+  }
+
+  #titulo-formacao::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #1cff7a;
+    margin-top: 10px;
+  }
+
+  #subtitulo-experiencia {
+    text-align: left;
+    margin-left: 20px;
+    position: relative;
+  }
+
+  #subtitulo-experiencia::after {
+    content: "";
+    display: block;
+    width: 45%;
+    height: 2px;
+    background-color: #1cff7a;
+    margin-top: 10px;
+  }
+
+  #formacao-profissional .formacao-header:first-of-type {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  #formacao-profissional .formacao-header:first-of-type::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #1cff7a;
+    margin-top: 40px;
   }
 }

@@ -18,6 +18,7 @@
           <h1 class="logo"><a href="index.html">Lucas Mrc</a></h1>
           <h2 class="logo2">Dev</h2>
         </div>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="sobre.html">Sobre</a></li>
@@ -77,5 +78,15 @@
     <footer>
       <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+      // Script para abrir/fechar o menu
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>

@@ -1,69 +1,62 @@
-/* Seção de Projetos */
 section#projetos {
   padding: 40px 20px;
   text-align: center;
-  width: 100%; /* Ocupa toda a largura da tela */
+  width: 100%;
   margin-bottom: 60px;
 }
 
-/* Título Principal */
 .titulo-principal {
   font-size: 46px;
   color: #00ff99;
-  margin-top: 40px; /* Distância do topo */
+  margin-top: 40px;
   margin-bottom: 40px;
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
 }
 
-/* Container para os projetos (lado a lado) */
 .projeto-container {
-  display: flex; /* Exibe os cards lado a lado */
-  flex-wrap: wrap; /* Permite que os projetos se ajustem ao tamanho da tela */
-  justify-content: center; /* Centraliza os projetos horizontalmente */
-  gap: 20px; /* Espaço entre os cards */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   margin-top: 20px;
 }
 
-/* Estilo dos cards de projeto */
 .projeto {
   display: flex;
-  flex-direction: column; /* Exibe o conteúdo do card na vertical */
-  align-items: center; /* Centraliza os itens dentro do card */
+  flex-direction: column;
+  align-items: center;
   background: #022907;
   border-radius: 10px;
   padding: 20px;
-  width: 350px; /* Largura maior para o card */
-  color: #00ff99; /* Cor do texto */
+  width: 350px;
+  color: #00ff99;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex-shrink: 0; /* Impede que os cards encolham */
-  height: auto; /* Altura ajustada conforme o conteúdo */
-  box-sizing: border-box; /* Para incluir o padding na largura */
-  position: relative; /* Necessário para o posicionamento absoluto do botão */
-  padding-bottom: 70px; /* Distância para garantir que o botão não sobreponha o texto */
+  flex-shrink: 0;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 70px;
 }
 
-/* Títulos dentro dos cards */
 .projeto h2 {
   font-size: 30px;
-  margin-top: 20px; /* Afastamento do título do conteúdo */
+  margin-top: 20px;
   margin-bottom: 45px;
 }
 
-/* Texto dentro do card */
 .projeto p {
   font-size: 16px;
-  color: #fff; /* Cor do texto */
+  color: #fff;
   line-height: 1.5;
   text-align: justify;
   margin-bottom: 20px;
 }
 
-/* Estilo do botão com imagem */
 .projeto-botao {
-  position: absolute; /* Posiciona o botão fora do fluxo normal */
-  bottom: 20px; /* Distância da parte inferior do card */
-  left: 20px; /* Distância da parte esquerda do card */
-  margin: 0; /* Remove a margem extra */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
 }
 
 .projeto-btn {
@@ -77,72 +70,33 @@ section#projetos {
   height: 30px;
 }
 
-/* Ajuste para telas pequenas */
-@media (max-width: 768px) {
-  section#projetos {
-    overflow-x: auto; /* Permite rolagem horizontal */
-  }
-
-  .projeto-container {
-    width: auto; /* Ajusta o container ao tamanho dos cards */
-  }
-
-  .projeto {
-    width: 90%; /* Cards ocupam 90% da tela em dispositivos pequenos */
-    height: auto; /* Altura ajustada */
-    margin: 15px auto;
-    padding-bottom: 70px; /* Distância para evitar sobreposição do botão */
-  }
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  .projeto-container {
-    flex-direction: column; /* Empilha os cards */
-    gap: 15px; /* Reduz o espaçamento entre os cards */
-  }
-
-  .projeto {
-    width: 90%; /* Faz os cards ocuparem quase toda a largura */
-    margin: 0 auto; /* Centraliza os cards */
-    padding: 15px; /* Reduz o espaçamento interno */
-  }
-
-  .projeto h2 {
-    font-size: 24px; /* Reduz o tamanho do título */
-  }
-
-  .projeto p {
-    font-size: 14px; /* Reduz o tamanho do texto */
-  }
-
-  .projeto-btn img {
-    width: 24px; /* Reduz o tamanho do botão */
-    height: 24px;
-  }
-}
-
-/* Para telas grandes (projetos lado a lado) */
-@media (min-width: 768px) {
-  .projeto-container {
-    display: flex; /* Lado a lado */
-    flex-wrap: wrap; /* Ajusta os projetos ao tamanho da tela */
-    justify-content: center; /* Centraliza os projetos */
-  }
-
-  .projeto {
-    flex-shrink: 0; /* Impede o encolhimento dos cards */
-  }
-}
-/* Estilização da imagem de fundo */
 .imagem-fundo {
   position: absolute;
-  top: 116%;
-  right: 0;
-  margin-right: 0px;
-  transform: translateY(-50%);
-  width: 380px;
+  top: 68%;
+  left: 89%;
+  transform: translate(-50%, -50%);
   opacity: 0.4;
   pointer-events: none;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  section#projetos {
+    overflow-x: auto;
+  }
+
+  .projeto-container {
+    width: auto;
+    margin-right: 30px;
+  }
+
+  .imagem-fundo {
+    display: none;
+  }
+  .projeto {
+    width: 90%;
+    height: auto;
+    margin: 15px auto;
+    padding-bottom: 70px;
+  }
 }

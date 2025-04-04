@@ -1,4 +1,3 @@
-/* Seção Tecnologias */
 #tecnologias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -10,11 +9,17 @@
   justify-content: center;
 }
 
-/* Estilização dos blocos de tecnologia */
+#titulo-principal {
+  font-size: 2rem;
+  color: #1cff7a;
+  text-align: center;
+  margin: 40px 0;
+}
+
 .tecnologia-bloco {
   background-color: #022907;
   color: white;
-  padding: 40px;
+  padding: 50px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   text-align: left;
@@ -24,6 +29,7 @@
   justify-content: flex-start;
   align-items: center;
   min-height: 300px;
+  width: 95%;
 }
 
 .tecnologia-bloco h3 {
@@ -58,56 +64,54 @@
   object-fit: contain;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-  #tecnologias {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  #tecnologias {
-    grid-template-columns: 1fr; /* Exibe os blocos em uma única coluna */
-    gap: 15px; /* Reduz o espaçamento entre os blocos */
-  }
-
-  .tecnologia-bloco {
-    padding: 20px; /* Reduz o espaçamento interno */
-    min-height: auto; /* Remove a altura mínima */
-  }
-
-  .tecnologia-bloco h3 {
-    font-size: 1.4em; /* Reduz o tamanho do título */
-  }
-
-  .tecnologia-bloco ul li {
-    font-size: 1.2em; /* Reduz o tamanho do texto */
-    gap: 10px; /* Reduz o espaçamento entre os itens */
-  }
-
-  .tecnologia-bloco ul li img {
-    width: 24px; /* Reduz o tamanho das imagens */
-  }
-}
-
-/* Estilização do título */
-#titulo-principal {
-  font-size: 3rem;
-  color: #1cff7a;
-  text-align: center;
-  margin: 40px 0;
-}
-
-/* Estilização da imagem de fundo */
 .imagem-fundo {
   position: absolute;
-  top: 76%;
-  right: 0;
-  margin-right: 0px;
-  transform: translateY(-50%);
-  width: 380px;
+  top: 68%;
+  left: 89%;
+  transform: translate(-50%, -50%);
   opacity: 0.4;
   pointer-events: none;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  #tecnologias {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  #titulo-principal {
+    font-size: 2rem;
+    color: #1cff7a;
+    text-align: center;
+    margin: 40px 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .imagem-fundo {
+    display: none;
+  }
+  .tecnologia-bloco {
+    padding: 15px;
+    width: 90%;
+    min-height: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .tecnologia-bloco h3 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .tecnologia-bloco ul li {
+    font-size: 1.2em;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .tecnologia-bloco ul li img {
+    width: 44px;
+  }
 }

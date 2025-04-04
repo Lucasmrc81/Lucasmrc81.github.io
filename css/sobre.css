@@ -1,36 +1,36 @@
 #titulo-sobre {
-  color: #1cff7a; /* Define a cor */
-  text-align: center; /* Centraliza horizontalmente */
-  margin-top: 3px; /* Adiciona espaçamento superior */
-  margin-bottom: 35px; /* Adiciona espaçamento inferior */
-  font-size: 2.9rem; /* Ajusta o tamanho da fonte */
+  color: #1cff7a;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 35px;
+  font-size: 2.9rem;
 }
 
 #sobre {
   display: block;
-  text-align: center; /* Centraliza os elementos dentro da seção */
+  text-align: center;
   padding: 20px;
   width: 100%;
-  box-sizing: border-box; /* Garante que o padding não afete o tamanho total da seção */
+  box-sizing: border-box;
 }
 
 #texto-sobre {
-  max-width: 1800px; /* Define uma largura máxima para o texto */
-  margin: 0 auto; /* Centraliza o conteúdo */
+  max-width: 1800px;
+  margin: 0 auto;
   line-height: 1.6;
-  text-align: justify; /* Justifica o texto para uma boa leitura */
-  padding: 0 20px; /* Adiciona espaçamento interno */
+  text-align: justify;
+  padding: 0 20px;
 }
 
 h1#titulo-sobre {
   font-size: 2em;
   margin-bottom: 20px;
-  text-align: center; /* Centraliza o título */
+  text-align: center;
 }
-/* Estilização da imagem de fundo */
+
 .imagem-fundo {
   position: absolute;
-  top: 76%;
+  top: 71%;
   right: 0;
   margin-right: 0px;
   transform: translateY(-50%);
@@ -40,25 +40,27 @@ h1#titulo-sobre {
   z-index: -1;
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
   #sobre {
-    padding: 10px; /* Reduz o espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    padding: 10px;
+    text-align: center;
   }
 
   #titulo-sobre {
-    font-size: 2rem; /* Reduz o tamanho do título */
-    margin-top: 10px; /* Ajusta o espaçamento superior */
+    font-size: 2rem;
+    margin-top: 10px;
   }
 
   #texto-sobre {
-    font-size: 1rem; /* Reduz o tamanho do texto */
-    padding: 0 10px; /* Adiciona espaçamento interno */
+    font-size: 1rem;
+    padding: 0 10px;
   }
 
-  .imagem-fundo {
-    width: 200px; /* Reduz o tamanho da imagem */
-    opacity: 0.3; /* Ajusta a opacidade */
+  .imagem-fundo-direita {
+    position: static;
+    margin: 20px auto 0;
+    transform: none;
+    width: 300px;
+    opacity: 0.4;
   }
 }

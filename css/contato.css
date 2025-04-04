@@ -1,29 +1,27 @@
-/* Seção de Contato */
 #contato {
   display: flex;
-  justify-content: space-between; /* Distribui o conteúdo e a imagem */
-  align-items: center; /* Alinha os itens no centro verticalmente */
-  text-align: left; /* Alinha o texto à esquerda */
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
   padding: 50px 20px;
   background-color: #022907;
   color: white;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  max-width: 900px; /* Aumenta o máximo para caber a imagem ao lado */
+  max-width: 900px;
   margin: 40px auto;
 }
 
-/* Estilo para a parte de texto dentro do card */
 #contato .contato-info {
-  flex: 1; /* Faz o conteúdo ocupar todo o espaço disponível */
-  margin-right: 20px; /* Espaçamento entre o conteúdo e a imagem */
+  flex: 1;
+  margin-right: 20px;
 }
 
 #titulo-contato {
   font-size: 2.6rem;
   color: #00ff99;
   margin-bottom: 20px;
-  text-align: center; /* Centraliza o título */
+  text-align: center;
 }
 
 #texto-contato {
@@ -39,16 +37,14 @@
   line-height: 2;
 }
 
-/* Estilo para a imagem fora do card */
 #contato img {
   width: 300px;
   height: auto;
-  border-radius: 8px; /* Arredonda as bordas da imagem */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
-  transition: transform 0.3s ease; /* Adiciona transição suave ao passar o mouse */
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-/* Redes Sociais */
 .redes-sociais {
   display: flex;
   gap: 15px;
@@ -75,56 +71,62 @@
 .social-botao:hover {
   transform: scale(1.1);
 }
-/* Estilização da imagem de fundo */
+
 .imagem-fundo {
   position: absolute;
-  top: 76%;
-  right: 0;
-  margin-right: 0px;
-  transform: translateY(-50%);
-  width: 380px;
+  top: 68%;
+  left: 89%;
+  transform: translate(-50%, -50%);
   opacity: 0.4;
   pointer-events: none;
   z-index: -1;
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
   #contato {
-    flex-direction: column; /* Empilha o texto e a imagem */
+    flex-direction: column;
     align-items: center;
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Reduz o espaçamento interno */
+    text-align: center;
+    margin: 60px auto 40px auto;
+    padding: 30px 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 90%;
+    max-width: 600px;
   }
 
   #contato .contato-info {
-    margin-right: 0; /* Remove a margem lateral */
-    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   #titulo-contato {
-    font-size: 2rem; /* Reduz o tamanho do título */
+    font-size: 2rem;
   }
 
   #texto-contato {
-    font-size: 1rem; /* Reduz o tamanho do texto */
+    font-size: 1rem;
   }
 
   #contato img {
-    width: 200px; /* Reduz o tamanho da imagem */
+    width: 200px;
   }
 
   .redes-sociais {
-    gap: 10px; /* Reduz o espaçamento entre os botões */
+    gap: 10px;
   }
 
   .social-botao {
-    width: 40px; /* Reduz o tamanho dos botões */
+    width: 40px;
     height: 40px;
   }
 
   .social-botao img {
-    width: 36px; /* Ajusta o tamanho das imagens */
+    width: 36px;
     height: 36px;
+  }
+
+  .imagem-fundo {
+    display: none;
   }
 }
