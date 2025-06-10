@@ -57,12 +57,9 @@ const HeroSection = () => {
               >
                 <i className="fas fa-paper-plane mr-2"></i> Contate-me
               </a>
-              <a
-                href="#"
-                className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-md transition flex items-center"
-              >
-                <i className="fas fa-file-download mr-2"></i> Download CV
-              </a>
+              <a href="/curriculo.pdf" download="curriculo_lucas.pdf" /* ...outras props... */>
+  Download CV
+</a>
             </div>
           </div>
         </div>
