@@ -1,23 +1,32 @@
 # Mrc.Dev
 
-**Mrc.Dev** é o meu portfólio online, criado para mostrar alguns dos projetos que desenvolvi ao longo da minha jornada como desenvolvedor. O objetivo deste site é apresentar meu trabalho e fornecer um meio de contato para quem deseja conhecer mais sobre minhas habilidades e projetos.
+Mrc.Dev é o meu portfólio online, criado para apresentar meus projetos, experiências e habilidades como desenvolvedor e engenheiro de software.
 
 ## 💻 Como foi feito
 
 O site foi desenvolvido utilizando:
 
-- **HTML** para a estrutura do conteúdo.
-- **CSS** para o design e estilo visual.
-- **GitHub Pages** para hospedar o site gratuitamente e tornar meu portfólio acessível para todos.
+- **React** para a construção dos componentes e interatividade.
+- **Vite** para um ambiente de desenvolvimento rápido e moderno.
+- **Tailwind CSS** para o design responsivo e estilização.
+- **Font Awesome** para os ícones das tecnologias e redes sociais.
+- **GitHub Pages** para hospedar o portfólio gratuitamente.
 
 ## 📍 Propósito
 
-Este site serve como um portfólio digital, onde você pode explorar projetos que desenvolvi e entender melhor as tecnologias que utilizo. Além disso, é uma forma prática de mostrar meu trabalho e compartilhar meu conhecimento com outras pessoas da comunidade de desenvolvimento.
+Este portfólio digital tem como objetivo:
+
+- Exibir projetos que desenvolvi ao longo da minha trajetória.
+- Apresentar as principais tecnologias que domino.
+- Compartilhar experiências e formações relevantes.
+- Facilitar o contato para oportunidades, parcerias ou dúvidas.
 
 ## 🔗 Acesse o Site
 
-Você pode visualizar o site diretamente pelo link: [https://lucasmrc81.github.io/](https://lucasmrc81.github.io/)
+Você pode visualizar o portfólio em:  
+[https://lucasmrc81.github.io/](https://lucasmrc81.github.io/)
 
 ---
 
-Obrigado por visitar! Se tiver dúvidas ou quiser entrar em contato, não hesite em me procurar.
+Obrigado por visitar!  
+Se tiver dúvidas, sugestões ou quiser entrar em contato, utilize o formulário do site ou me procure nas redes sociais.
