@@ -12,6 +12,14 @@ O site foi desenvolvido utilizando:
 - **Font Awesome** para os ícones das tecnologias e redes sociais.
 - **GitHub Pages** para hospedar o portfólio gratuitamente.
 
+## 🚀 Como rodar localmente
+bash
+# Instalar dependências
+npm install
+
+# Iniciar servidor de desenvolvimento
+npm run dev
+
 ## 📍 Propósito
 
 Este portfólio digital tem como objetivo:
