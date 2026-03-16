@@ -11,7 +11,7 @@ const Footer = () => {
           </h2>
           <p className="text-sm mt-1">
             <span className="text-white">
-              Engenheiro de Software& Desenvolvedor Full Stack{" "}
+              Engenheiro de Software & Desenvolvedor Full Stack
             </span>
           </p>
         </div>
@@ -35,7 +35,7 @@ const Footer = () => {
             <i className="fab fa-linkedin-in text-xl"></i>
           </a>
           <a
-            href="https://wa.me/5511940746586"
+            href="https://wa.me/5511918543052"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon text-white hover:text-blue-500 transition"
@@ -54,10 +54,10 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Seção da Direita: Copyright e Desenvolvido com */}
+        {/* Seção da Direita: Copyright */}
         <div className="flex flex-col items-center md:items-end text-center md:text-right">
           <p className="text-gray-400 text-sm">
-            &copy; 2025 Lucas Mrc. Todos os direitos reservados.
+            &copy; 2026 Lucas Mrc. Todos os direitos reservados.
           </p>
           <p className="text-gray-400 text-sm mt-1">
             Desenvolvido com <i className="fas fa-heart text-red-500"></i> e

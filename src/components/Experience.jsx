@@ -7,9 +7,9 @@ const experiences = [
     company: "IBM",
     years: "Ago 2025 - Presente",
     description:
-      "Atuando em projetos estratégicos de backend, mobile e inteligência artificial. Desenvolvimento com Kotlin, Java e React Native, integração de APIs REST, Firebase e automações com CI/CD. Participação em times ágeis entregando soluções escaláveis e de alta qualidade.",
+      "Desenvolvimento de aplicações full stack utilizando Angular no frontend e Node.js no backend, com contribuições em componentes Java com Spring Boot. Integração de APIs REST, versionamento com Git/GitHub e suporte aos pipelines de CI/CD. Participação em times ágeis entregando soluções escaláveis e de alta qualidade.",
     icon: "fas fa-briefcase",
-    tags: ["Kotlin", "Java", "React Native", "CI/CD", "APIs REST", "Firebase"],
+    tags: ["Angular", "Node.js", "Java", "Spring Boot", "CI/CD", "APIs REST"],
   },
   {
     title: "Infinity Bank",
@@ -17,7 +17,7 @@ const experiences = [
     years: "2023",
     description:
       "Desenvolvimento de um banco digital funcional utilizando HTML, CSS e JavaScript. O projeto inclui funcionalidades como consulta de saldo, pagamentos, transferências e extrato bancário. Foco em interfaces responsivas e interações dinâmicas, demonstrando habilidades na criação de soluções completas e bem estruturadas.",
-    icon: "fas fa-briefcase",
+    icon: "fas fa-university",
     tags: ["HTML", "CSS", "JavaScript", "Banco Digital"],
   },
   {
@@ -134,8 +134,7 @@ const ExperienceSection = () => {
                   className="relative h-full flex flex-col"
                   style={{ minHeight: "340px" }}
                 >
-                 
-                  <div className="glass-card p-6 rounded-lg experience-card md:ml-8 hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col">
+                  <div className="glass-card p-6 rounded-lg experience-card hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col">
                     <div className="flex items-center mb-4 experience-title">
                       <div className="text-blue-500 text-xl md:text-2xl mr-4">
                         <i className={exp.icon}></i>
