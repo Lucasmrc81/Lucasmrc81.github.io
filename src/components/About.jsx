@@ -11,39 +11,40 @@ const AboutSection = () => {
 
         <div className="max-w-4xl mx-auto glass-card p-8 rounded-xl">
           <p className="text-gray-300 text-lg leading-relaxed mb-6">
-            Sou um engenheiro de software em formação e desenvolvedor full
-            stack, com uma paixão profunda por tecnologia, inovação e automação
-            de sistemas. Ao longo da minha jornada, busco constantemente evoluir
-            minhas habilidades para criar soluções tecnológicas robustas,
-            eficientes e escaláveis.
+            Sou estudante de Engenharia de Software e desenvolvedor Full Stack,
+            atualmente estagiário na{" "}
+            <span className="text-blue-400 font-semibold">IBM</span>, onde atuo
+            no desenvolvimento de aplicações corporativas utilizando Angular,
+            Node.js e Java com Spring Boot. Trabalho com integração de APIs
+            REST, CI/CD e arquitetura modular em projetos reais de grande escala.
           </p>
           <p className="text-gray-300 text-lg leading-relaxed mb-6">
-            Tenho como objetivo transformar ideias em soluções impactantes e
-            acessíveis, capazes de atender às necessidades reais, simplificar
-            processos e melhorar a experiência do usuário. Meu compromisso é
-            impulsionar a inovação e contribuir para o avanço tecnológico por
-            meio da criação de sistemas que proporcionem valor e resultados
-            concretos.
+            Além da IBM, desenvolvo projetos pessoais como a assistente virtual{" "}
+            <span className="text-blue-400 font-semibold">EVA</span>, que combina
+            Python, NLP e inteligência artificial. Tenho experiência com
+            desenvolvimento mobile em Kotlin, Flutter e React Native, e busco
+            constantemente evoluir minhas habilidades para criar soluções que
+            gerem valor real para pessoas e negócios.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             <div className="text-center">
-              <div className="text-blue-500 text-3xl font-bold mb-2">1,5</div>
-              <div className="text-gray-400">Anos de experiência</div>
+              <div className="text-blue-500 text-3xl font-bold mb-2">+8</div>
+              <div className="text-gray-400">Meses na IBM</div>
             </div>
-
             <div className="text-center">
               <div className="text-blue-500 text-3xl font-bold mb-2">8+</div>
               <div className="text-gray-400">Projetos concluídos</div>
             </div>
             <div className="text-center">
-              <div className="text-blue-500 text-3xl font-bold mb-2">10+</div>
+              <div className="text-blue-500 text-3xl font-bold mb-2">13+</div>
               <div className="text-gray-400">Tecnologias dominadas</div>
             </div>
             <div className="text-center">
-              <div className="text-blue-500 text-3xl font-bold mb-2">100%</div>
-              <div className="text-gray-400">Focado na qualidade</div>
+              <div className="text-blue-500 text-3xl font-bold mb-2">7</div>
+              <div className="text-gray-400">Certificações</div>
             </div>
+            
           </div>
         </div>
       </div>

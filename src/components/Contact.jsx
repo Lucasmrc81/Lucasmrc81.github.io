@@ -1,32 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [loading, setLoading] = useState(false);
-  const [notification, setNotification] = useState(null);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    // Simula envio (substitua por fetch se quiser enviar de verdade)
-    setTimeout(() => {
-      setLoading(false);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      setNotification("Mensagem enviada com sucesso!");
-      setTimeout(() => setNotification(null), 3000);
-    }, 1500);
-  };
-
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 bg-slate-800/50">
       <div className="container mx-auto">
@@ -73,10 +47,10 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-semibold text-white">Email</h4>
                       <a
-                        href="mailto:lucasmrc81@gmail.com"
+                        href="mailto:lucasmrc.dev@gmail.com"
                         className="text-gray-400 hover:text-blue-400 transition"
                       >
-                        lucasmrc81@gmail.com
+                        lucasmrc.dev@gmail.com
                       </a>
                     </div>
                   </div>
@@ -87,10 +61,10 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-semibold text-white">Telefone</h4>
                       <a
-                        href="tel:+5511940746586"
+                        href="tel:+5511918543052"
                         className="text-gray-400 hover:text-blue-400 transition"
                       >
-                        +55 (11) 94074-6586
+                        +55 (11) 91854-3052
                       </a>
                     </div>
                   </div>
@@ -120,7 +94,7 @@ const ContactSection = () => {
                       <i className="fab fa-linkedin-in text-lg"></i>
                     </a>
                     <a
-                      href="https://wa.me/5511940746586"
+                      href="https://wa.me/5511918543052"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="social-icon"
@@ -140,6 +114,7 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
+
               {/* Formulário de Contato */}
               <div>
                 <h3 className="text-2xl font-bold mb-8 text-white relative">
@@ -235,18 +210,8 @@ const ContactSection = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Anti-spam */}
-                  <input
-                    type="text"
-                    name="_gotcha"
-                    style={{ display: "none" }}
-                  />
-                  {/* Redirecionamento opcional */}
-                  <input
-                    type="hidden"
-                    name="_next"
-                    value="https://formspree.io/f/mldnjorz"
-                  />
+                  <input type="text" name="_gotcha" style={{ display: "none" }} />
+                  <input type="hidden" name="_next" value="https://formspree.io/f/mldnjorz" />
                   <button
                     type="submit"
                     className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 btn-send flex items-center justify-center space-x-2 relative overflow-hidden"
@@ -260,7 +225,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-      {/* Animations */}
       <style>{`
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(20px);}

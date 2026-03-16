@@ -2,6 +2,7 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import HeroSection from "./components/HomeSection.jsx";
 import AboutSection from "./components/About.jsx";
+import Certificacoes from "./components/Certificações.jsx";
 import SkillsSection from "./components/Skills.jsx";
 import ExperienceSection from "./components/Experience.jsx";
 import ProjectsSection from "./components/Projects.jsx";
@@ -16,6 +17,7 @@ function App() {
       <main id="main-content">
         <HeroSection />
         <AboutSection />
+        <Certificacoes />
         <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />

@@ -3,6 +3,15 @@ import React from "react";
 // Experiências reais
 const experiences = [
   {
+    title: "Estagiário de Desenvolvimento Full Stack",
+    company: "IBM",
+    years: "Ago 2025 - Presente",
+    description:
+      "Atuando em projetos estratégicos de backend, mobile e inteligência artificial. Desenvolvimento com Kotlin, Java e React Native, integração de APIs REST, Firebase e automações com CI/CD. Participação em times ágeis entregando soluções escaláveis e de alta qualidade.",
+    icon: "fas fa-briefcase",
+    tags: ["Kotlin", "Java", "React Native", "CI/CD", "APIs REST", "Firebase"],
+  },
+  {
     title: "Infinity Bank",
     company: "Projeto Pessoal",
     years: "2023",
@@ -14,11 +23,11 @@ const experiences = [
   {
     title: "ZapCar",
     company: "Projeto Pessoal",
-    years: "2023",
+    years: "2024",
     description:
-      "Projeto pessoal que consiste em um banco digital funcional desenvolvido com HTML, CSS e JavaScript. Inclui funcionalidades como consulta de saldo, pagamentos, transferências e extrato bancário. Por meio desse projeto, aprimorei minhas habilidades em interfaces responsivas e interações dinâmicas, consolidando meu conhecimento em desenvolvimento front-end.",
+      "Aplicativo Android de aluguel de carros desenvolvido em Kotlin com Android Studio. Implementação de navegação entre telas, consumo de dados e interface moderna seguindo boas práticas de desenvolvimento mobile.",
     icon: "fas fa-car",
-    tags: ["HTML", "CSS", "JavaScript", "Front-end"],
+    tags: ["Kotlin", "Android Studio", "Mobile"],
   },
 ];
 
@@ -50,6 +59,15 @@ const educations = [
     description:
       "A Formação Android Developer é um curso completo para quem deseja aprender a desenvolver aplicativos Android com Kotlin. Aborda desde os conceitos básicos até práticas avançadas, como arquitetura de software, consumo de APIs, banco de dados local e Firebase. Ideal para quem quer criar apps modernos, escaláveis e eficientes, seguindo as melhores práticas do mercado.",
     tags: ["Android", "Kotlin", "Firebase", "Mobile"],
+  },
+  {
+    title: "Flutter Specialist",
+    institution: "Dio.me",
+    years: "2024",
+    icon: "fas fa-mobile-alt",
+    description:
+      "Especialização em Flutter para desenvolvimento de aplicativos multiplataforma (Android e iOS) com Dart. Aborda gerenciamento de estado, integração com APIs e boas práticas de desenvolvimento mobile moderno.",
+    tags: ["Flutter", "Dart", "Mobile", "Multiplataforma"],
   },
 ];
 
@@ -116,7 +134,7 @@ const ExperienceSection = () => {
                   className="relative h-full flex flex-col"
                   style={{ minHeight: "340px" }}
                 >
-                  <div className="timeline-dot"></div>
+                 
                   <div className="glass-card p-6 rounded-lg experience-card md:ml-8 hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col">
                     <div className="flex items-center mb-4 experience-title">
                       <div className="text-blue-500 text-xl md:text-2xl mr-4">

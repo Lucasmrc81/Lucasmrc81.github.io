@@ -28,27 +28,27 @@ const HeroSection = () => {
             </h2>
 
             <div className="flex flex-wrap gap-4 mb-8">
-              <div className="bg-slate-700 px-4 py-2 rounded-full flex items-center">
-                <i className="fab fa-java text-blue-400 mr-2 text-xl"></i>
-                <span className="text-sm">Java</span>
-              </div>
-              <div className="bg-slate-700 px-4 py-2 rounded-full flex items-center">
-                <i className="fab fa-js text-yellow-400 mr-2 text-xl"></i>
-                <span className="text-sm">JavaScript</span>
-              </div>
-              <div className="bg-slate-700 px-4 py-2 rounded-full flex items-center">
-                <i className="fas fa-code text-green-400 mr-2 text-xl"></i>
-                <span className="text-sm">Kotlin</span>
-              </div>
-              <div className="bg-slate-700 px-4 py-2 rounded-full flex items-center">
-                <i className="fab fa-react text-blue-300 mr-2 text-xl"></i>
-                <span className="text-sm">React</span>
-              </div>
-              <div className="bg-slate-700 px-4 py-2 rounded-full flex items-center">
-                <i className="fab fa-git-alt text-orange-500 mr-2 text-xl"></i>
-                <span className="text-sm">Git</span>
-              </div>
-            </div>
+  <div className="bg-slate-700 px-4 py-2 rounded-full flex items-center">
+    <i className="fab fa-java text-red-400 mr-2 text-xl"></i>
+    <span className="text-sm">Java</span>
+  </div>
+  <div className="bg-slate-700 px-4 py-2 rounded-full flex items-center">
+    <i className="fab fa-angular text-red-500 mr-2 text-xl"></i>
+    <span className="text-sm">Angular</span>
+  </div>
+  <div className="bg-slate-700 px-4 py-2 rounded-full flex items-center">
+    <i className="fab fa-node-js text-green-400 mr-2 text-xl"></i>
+    <span className="text-sm">Node.js</span>
+  </div>
+  <div className="bg-slate-700 px-4 py-2 rounded-full flex items-center">
+   <i className="fab fa-python text-yellow-400 mr-2 text-xl"></i>
+    <span className="text-sm">Python</span>
+  </div>
+  <div className="bg-slate-700 px-4 py-2 rounded-full flex items-center">
+    <i className="fab fa-git-alt text-orange-500 mr-2 text-xl"></i>
+    <span className="text-sm">Git</span>
+  </div>
+</div>
 
             <div className="flex space-x-4">
   <a
